@@ -1,0 +1,101 @@
+<app-navbar></app-navbar>
+<div class="slider_area slider_bg_1">
+    <div class="slider_text">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto">
+
+                    <form class="log-form" [formGroup]="signUpForm" (ngSubmit)="signUpUser($event)">
+                        <h3 class="text-center py-3">booking</h3>
+                        <h6 class="text-center pb-3">Register</h6>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mt-10">
+                                    <label>First name</label>
+                                    <input type="text" name="user_" placeholder="first name" class="single-input"
+                                        formControlName="firstname">
+                                    <p class="text-danger" *ngIf="signUpForm.value.firstname.length <=3">Required *</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mt-10">
+                                    <label>Last name</label>
+                                    <input type="text" name="user_" placeholder="last name" class="single-input"
+                                        formControlName="lastname">
+                                    <p class="text-danger" *ngIf="signUpForm.value.lastname.length <=3">Required *</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mt-10">
+                                    <label>Phone Number</label>
+                                    <input type="number" name="user_" placeholder="phone number" class="single-input"
+                                        formControlName="phonenumber">
+                                    <p class="text-danger" *ngIf="signUpForm.value.phonenumber.length <=3">Required *</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mt-10">
+                                    <label>Adress</label>
+                                    <input type="text" name="user_" placeholder="adress" class="single-input"
+                                        formControlName="adress">
+                                    <p class="text-danger" *ngIf="signUpForm.value.adress.length <=3">Required *</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mt-10">
+                                    <label>Country</label>
+                                    <input type="text" name="user_" placeholder="country" class="single-input"
+                                        formControlName="country">
+                                    <p class="text-danger" *ngIf="signUpForm.value.country.length <=3">Required *</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mx-3 mt-10">
+                            <label>Email</label>
+                            <input type="email" name="login_" placeholder="Email" class="single-input"
+                                formControlName="email">
+                            <p class="text-danger" *ngIf="signUpForm.value.email.length == 0">Required *</p>
+                        </div>
+                        <div class="mx-3 mt-10">
+                            <label>Password</label>
+                            <input type="password" name="password_" placeholder="password" class="single-input"
+                                formControlName="password">
+                            <p class="text-danger" *ngIf="signUpForm.value.password.length==0">Required *</p>
+                        </div>
+                        <div class="mx-3 mt-10">
+                            <label>Confirm password</label>
+                            <input type="password" name="password_" placeholder="password" class="single-input"
+                                formControlName="confPassword">
+                        </div>
+                        <div class="mt-10" *ngIf="signUpForm.value.password != signUpForm.value.confPassword ">
+                            <div class="alert alert-danger">Passwords don't match</div>
+                        </div>
+                        <div class="mt-10">
+                            <div class="alert alert-success" *ngIf="createdSuccessfully">
+                                Your account is created successfully, you can <a style="color: darkcyan;"
+                                    routerLink="/login">login now</a>.
+                            </div>
+                            <div class="alert alert-danger" *ngIf="errorMessage">
+                                {{errorMessage}}
+                            </div>
+                            <div class="alert alert-info" *ngIf="isLoading">
+                                Please wait...
+                            </div>
+
+
+                        </div>
+                        <div class="button-group-area mt-10 text-center" *ngIf="! isLoading">
+                            <button class="genric-btn primary" [disabled]="! signUpForm.valid">SIGN UP</button>
+                            <!-- <a routerLink="/home" class="genric-btn success-border">CANCEL</a> -->
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<app-footer></app-footer>

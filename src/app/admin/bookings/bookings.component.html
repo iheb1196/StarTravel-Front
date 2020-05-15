@@ -1,0 +1,59 @@
+ <div class="container-fluid">
+    <div class="row my-3">
+        <div class="col-6">
+            <h3>Bookings</h3>
+        </div>
+      
+    </div>
+    <div class="row">
+        <div class="col-12 mb-4">
+            <!-- Approach -->
+            <div class="card shadow mb-4">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Client</th>
+                            <th scope="col">Flight</th>
+                            <th scope="col">Passangers</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">CheckInDate</th>
+                            <th scope="col">Payment Method</th>
+                            <th scope="col">Date Creation</th>
+                            <th scope="col">Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let booking of bookings">
+                            <th scope="row">{{booking._id}}</th>
+                            <td>{{booking.client.firstname}} {{booking.client.lastname}}</td>
+                            <td>{{booking.flight.dep.country}} >>>  {{booking.flight.arr.country}}</td>
+                            <td>{{booking.numberOfPassangers}}</td>
+                            <td>{{booking.phone}}</td>
+                            <td>{{booking.checkInDate}}</td>
+                            <td>{{booking.checkInDate}}</td>
+                            <td>{{booking.dateCreation}}</td>
+                            <td>{{booking.status}}</td>
+                            <td>
+                                <div class="pull-right">
+                                    <button class="btn btn-success btn-sm mx-2" data-toggle="modal"
+                                        data-target="#exampleModal"
+                                        (click)="edit(booking._id,'accepted')">
+                                        <span class="fas fa-fw fa-check"></span>
+                                    </button>
+                                    <button class="btn btn-danger btn-sm mx-2"
+                                        (click)="edit(booking._id,'refused')">
+                                        <span class="fas fa-fw fa-close"></span>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+ 

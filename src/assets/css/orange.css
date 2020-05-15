@@ -1,0 +1,4487 @@
+/* ----------------------------------------------------
+Theme Name:		Star Travel - HTML Template
+Version:		1.0.1
+Author:			Star Travel
+------------------------------------------------------- */
+
+
+/* ======================================================
+	TABLE OF CONTENTS
+   ====================================================== */
+
+/**
+
+* 1.0	Settings
+* 1.1	Top Bar
+* 1.2	Navbar
+* 1.3	Slider
+* 1.4	Search Tabs
+* 1.5	Main Block
+* 1.6	Hotel Block
+* 1.7	Tour Block
+* 1.8	Cruise Block
+* 1.9	Flight Block
+* 1.10	Destination Block
+* 1.11	Vehicle Block
+* 1.12	Gallery
+* 1.13	Best Features
+* 1.14	Luxury Offers
+* 1.15	Highlights
+* 1.16	Banners
+* 1.17	Testimonials
+* 1.18	Latest Blog
+* 1.19	Packages
+* 1.20	Newsletter
+* 1.21	Contact Form
+* 1.22	Footer
+* 1.23	Page Cover
+* 1.24	Sidebar
+* 1.25	Grid Block
+* 1.26	List Block
+* 1.27	Pagination
+* 1.28	Detail Pages Tabs
+* 1.29	Detail Pages Slider
+* 1.30	Custom Forms
+* 1.31	Extra Pages
+* 1.32	Contact Us
+
+**/
+
+/* -----------------------------------------------------
+		Settings
+   ----------------------------------------------------- */
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/loader-orange.gif) center no-repeat #fff;
+}
+
+p{
+	color:#808285;
+}
+
+.page-heading h2{
+	color:#231f20;
+}
+
+.page-heading.white-heading h2{
+	color:white;
+}
+
+
+.page-heading .heading-line{
+	border-color:#4e73df;
+	border-width:medium;
+}
+
+.innerpage-heading h1{
+	color:#000000;
+}
+
+.trip-heading span{
+	color:#4e73df;
+}
+
+.yellow-line{
+	border-color:#4e73df;
+	border-width:5px;
+}
+
+.bg-grey{
+	background:#f1f2f2;
+}
+
+.btn{
+	border-radius:0px;
+	border:0px;
+}
+
+.btn-orange,
+.btn-orange:focus{
+	background:#4e73df;
+	color:white;
+}
+
+.btn-orange:hover{
+	background:#010101;
+	color:white;
+}
+
+.lg-booking-form .payment-tabs #tab-paypal .paypal-text .btn{
+	color: #000;
+	background-color: #D1D1D1FF;
+}
+
+.lg-booking-form .payment-tabs #tab-paypal .paypal-text .btn:hover{
+	color: #D1D1D1FF;
+	background-color: #000;
+}
+
+
+.table-responsive .table tr td .btn-orange,
+.table-responsive .table tr td .btn-orange:focus{
+	background:#4e73df;
+	color:white;
+}
+
+.table-responsive .table tr td .btn-orange:hover{
+	background:#010101;
+	color:white;
+}
+
+.btn-black,
+.btn-black:focus{
+	background:#000;
+	color:white;
+}
+
+.btn-black:hover{
+	background:#4e73df;
+	color:white;
+}
+
+.btn-o-border{
+	border:1px solid #4e73df;
+	color:#4e73df;
+}
+
+.btn-o-border:hover{
+	border-color:#4e73df;
+	color:white;
+	background:#4e73df;
+}
+
+.btn-w-border{
+	border:1px solid #e2e1e1;
+	color:white;
+}
+
+.btn-w-border:hover{
+	border:1px solid white;
+	color:black;
+	background:white;
+}
+
+.btn-g-border,
+.btn-g-border:focus{
+	border:1px solid #939598;
+	color:#565656;
+}
+
+.btn-g-border:hover{
+	border:1px solid black;
+	color:white;
+	background:black;
+}
+
+.btn-white,
+.btn-white:focus{
+	background:white;
+	color:#000;
+}
+
+.btn-white:hover{
+	background:#4e73df;
+	color:#000;
+}
+
+.table-responsive .table tr td .btn-lightgrey,
+.table-responsive .table tr td .btn-lightgrey:focus{
+	background:#efefef;
+	color:#000;
+}
+
+.table-responsive .table tr td .btn-lightgrey:hover{
+	background:#303030;
+	color:white;
+}
+
+.owl-carousel.owl-custom-arrow .owl-controls .owl-buttons .owl-prev,
+.owl-carousel.owl-custom-arrow .owl-controls .owl-buttons .owl-next{
+	border-radius:0px;
+	background:#4e73df;
+}
+
+.map iframe{
+	border:0px;
+}
+
+.border-shape-top::before,
+.border-shape-top::after{
+	background:#333;
+}
+
+.border-shape-bot::before,
+.border-shape-bot::after{
+	background:#4e73df;	
+}
+
+@media(max-width:991px){
+	
+	.back-size{
+		background-size:cover !important;
+	}
+}
+
+@media(max-width:768px){
+	
+	.table-responsive{
+		border:0px;
+		margin:0px;
+	}
+}
+
+
+/* -----------------------------------------------------
+		Top Bar
+ ----------------------------------------------------- */
+
+#top-bar{
+	background-color:#000;
+}
+
+#top-bar.colored{
+	background:#4e73df;	
+}
+
+#top-bar.transparent{
+	background:rgba(0,0,0,0.7);	
+}
+
+#top-bar .form-group select{
+    background:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	border:0px;
+	box-shadow:none;
+}
+
+#top-bar .form-group select option{
+	color:black;
+}
+
+#top-bar.tb-text-white #links ul li a,
+#top-bar.tb-text-white #info ul li,
+#top-bar.tb-text-white .form-group select,
+#top-bar.tb-text-white .form-group .fa {
+	color:white;
+}
+
+#top-bar.tb-text-white #links > ul > li form:after{
+	background:white;
+}
+
+#top-bar.tb-text-grey #links ul li a,
+#top-bar.tb-text-grey #info ul li,
+#top-bar.tb-text-grey .form-group select,
+#top-bar.tb-text-grey .form-group .fa{
+	color:#939598;
+}
+
+#top-bar.tb-text-grey #links > ul > li form:after{
+	background:#939598;
+}
+
+#flight-homepage #top-bar{
+	background:#4e73df;
+}
+
+#cruise-homepage #top-bar{
+	background:rgba(0,0,0,0.7);
+}
+
+
+/* -----------------------------------------------------
+			Buttons boxshadow unset on focus unsetting
+   ----------------------------------------------------- */
+.btn:focus ,
+.navbar-toggler:focus ,
+button:focus ,
+input:focus
+{
+	outline: unset;
+	box-shadow: none;
+}
+
+
+/* -----------------------------------------------------
+			Navbar [=====#mynavbar-1======] Header 1 & 2
+   ----------------------------------------------------- */
+
+nav.navbar{
+	box-shadow:0px 2px 5px rgba(0,0,0,0.2);
+}
+
+nav.navbar#mynavbar-1 .navbar-collapse ul li a 
+{
+	color: #444;
+}
+
+nav.navbar .navbar-collapse > ul > li:hover > a ,
+nav.navbar .navbar-collapse > ul > li > a:focus
+{
+	color: orange !important;
+}
+
+nav.navbar#mynavbar-1 .navbar-collapse > ul > li.active > a{
+	color: #4e73df;
+}
+
+
+
+nav.navbar#mynavbar-1 .navbar-collapse > .navbar-nav > li .dropdown-menu li a:hover ,
+nav.navbar#mynavbar-1 .navbar-collapse > .navbar-nav > li .dropdown-menu li a:focus ,
+nav.navbar#mynavbar-1 .navbar-collapse > .navbar-nav > li .dropdown-menu li.active > a ,
+nav.navbar#mynavbar-1 .navbar-collapse > .navbar-nav > li .dropdown-menu li.active a:hover 
+{
+	background-color: #4e73df;
+	color: black;
+}
+
+nav.navbar .navbar-collapse .navbar-nav li.dropdown ul.dropdown-menu li.dropdown-item 
+{
+	background-color: unset;
+}
+
+.dropdown-item {
+	background: unset;
+}
+
+nav.navbar#mynavbar-1 li.dropdown-submenu:hover .dropdown-toggle {
+	background-color: #4e73df;
+	color: black;
+}
+
+
+/*======================Navbar Brand ====================*/
+
+nav.navbar#mynavbar-1.navbar-light .navbar-brand {
+  color:#fff;
+  font-weight:900;
+}
+  
+nav.navbar#mynavbar-1 .navbar-brand {
+  color:#000;
+  font-weight:900;
+}
+
+nav.navbar#mynavbar-1 .navbar-brand span{
+  color:#4e73df;
+}
+
+nav.navbar#mynavbar-1 .header-search .fa{
+	color:#4e73df;
+}
+
+nav.navbar#mynavbar-1 .navbar-search-link > li:last-child a{
+	border:1px solid #4e73df;
+	color:#4e73df;
+	border-radius:100%;
+}
+
+nav.navbar .navbar-search-link > li.search-btn{
+	background-color: unset;
+}
+
+/*======================Navbar Brand for #mynavbar-1 Ends====================*/
+
+
+/*===========================Arrow in Submenu starts===============================*/
+
+nav.navbar#mynavbar-1 .dropdown-submenu:hover > a:after,
+nav.navbar#mynavbar-1 .dropdown-submenu.active > a:after{
+	border-left-color:#000;
+}
+
+nav.navbar#mynavbar-1 .dropdown-submenu > a:after {
+    border-color: transparent;
+    border-style: solid;
+     border-width: 5px 0 5px 5px; 
+    border-left-color: #cccccc;
+}
+
+nav.navbar#mynavbar-1 .navbar-nav > li::before {
+	background-color: #4e73df;
+}
+
+nav.navbar#mynavbar-1 > a:after {
+	color: #B5B5B5FF;
+}
+
+
+nav.navbar#mynavbar-1 .navbar-collapse > ul.navbar-nav > li.dropdown ul.dropdown-menu li.dropdown-submenu:hover a:after {
+	color: black;
+}
+
+
+/*===========================Arrow in Submenu Ends===============================*/
+
+nav.navbar#mynavbar-1 .navbar-nav li .dropdown-menu li a{
+	border-bottom:1px solid #ebebeb;
+}
+
+
+nav.navbar#mynavbar-1 .navbar-nav li .dropdown-menu li:first-child ,
+nav.navbar#mynavbar-1 .navbar-nav li .dropdown-menu li:last-child a 
+{
+	border-bottom:unset;
+}
+
+nav.navbar#mynavbar-1 .navbar-search-link > li:last-child a{
+	border:1px solid #4e73df;
+	color:#4e73df;
+	border-radius:100%;
+}
+
+nav.navbar#mynavbar-1 .navbar-nav > li.dropdown > .dropdown-menu {
+	margin: -1px;
+	padding: 0;
+	border-top: 0;
+	border-radius: 0 0 5px 5px;
+	outline: none;
+}
+
+nav.navbar#mynavbar-1 .mega-dropdown-menu .dropdown-header span {
+	color: #4e73df;
+}
+
+nav.navbar#mynavbar-1 .mega-dropdown-menu .dropdown-header {
+	color: #333;
+}
+
+
+/* -----------------------------------------------------
+			Navbar [=====#mynavbar======] Header 3
+   ----------------------------------------------------- */
+
+nav.navbar#mynavbar {
+	transition: all 0.5s;
+	box-shadow: none;
+
+}
+
+nav.navbar#mynavbar .navbar-collapse > ul > li > a {
+	color: #FFF;
+}
+
+nav.navbar#mynavbar .navbar-nav li .mega-dropdown-menu ul li a {
+	color: #444;
+}
+
+
+
+nav.navbar#mynavbar .navbar-collapse > ul > li.active > a{
+	color: #4e73df;
+}
+
+nav.navbar#mynavbar .navbar-collapse > .navbar-nav > li .dropdown-menu li a:hover ,
+nav.navbar#mynavbar .navbar-collapse > .navbar-nav > li .dropdown-menu li a:focus ,
+nav.navbar#mynavbar .navbar-collapse > .navbar-nav > li .dropdown-menu li.active > a ,
+nav.navbar#mynavbar .navbar-collapse > .navbar-nav > li .dropdown-menu li.active a:hover 
+{
+	background-color: #4e73df;
+	color: black;
+}
+
+nav.navbar#mynavbar li.dropdown-submenu:hover .dropdown-toggle {
+	background-color: #4e73df;
+	color: black;
+}
+
+
+/*======================Navbar Brand ====================*/
+
+nav.navbar#mynavbar.navbar-light .navbar-brand {
+  color:#fff;
+  font-weight:900;
+}
+  
+nav.navbar#mynavbar .navbar-brand {
+  color:#fff;
+  font-weight:900;
+}
+
+nav.navbar#mynavbar .navbar-brand span{
+  color:#4e73df;
+}
+
+nav.navbar#mynavbar .header-search .fa{
+	color:#4e73df;
+}
+
+nav.navbar#mynavbar .navbar-search-link > li:last-child a{
+	border:1px solid #4e73df;
+	color:#4e73df;
+	border-radius:100%;
+}
+
+/*======================Navbar Brand for #mynavbar Ends====================*/
+
+
+/*===========================Arrow in Submenu starts===============================*/
+
+nav.navbar#mynavbar .dropdown-submenu:hover > a:after,
+nav.navbar#mynavbar .dropdown-submenu.active > a:after{
+	border-left-color:#000;
+}
+
+nav.navbar#mynavbar .dropdown-submenu > a:after {
+    border-color: transparent;
+    border-style: solid;
+     border-width: 5px 0 5px 5px; 
+    border-left-color: #cccccc;
+}
+
+nav.navbar#mynavbar .navbar-nav > li::before {
+	background-color: #4e73df;
+}
+
+nav.navbar#mynavbar .dropdown-submenu > a:after {
+	color: #B5B5B5FF;
+}
+
+
+nav.navbar#mynavbar .navbar-collapse > ul.navbar-nav > li.dropdown ul.dropdown-menu li.dropdown-submenu:hover a:after {
+	color: black;
+}
+
+
+/*===========================Arrow in Submenu Ends===============================*/
+
+nav.navbar#mynavbar .navbar-nav li .dropdown-menu li a{
+	border-bottom:1px solid #ebebeb;
+}
+
+
+nav.navbar#mynavbar .navbar-nav li .dropdown-menu li:first-child ,
+nav.navbar#mynavbar .navbar-nav li .dropdown-menu li:last-child a 
+{
+	border-bottom:unset;
+}
+
+nav.navbar#mynavbar .navbar-search-link > li:last-child a{
+	border:1px solid #4e73df;
+	color:#4e73df;
+	border-radius:100%;
+}
+
+nav.navbar#mynavbar .navbar-nav > li.dropdown > .dropdown-menu {
+	margin: 0px;
+	padding: 0;
+	border-top: 0;
+	border-radius: 0 0 5px 5px;
+	outline: none;
+}
+
+nav.navbar#mynavbar .mega-dropdown-menu .dropdown-header span {
+	color: #4e73df;
+}
+
+nav.navbar#mynavbar .mega-dropdown-menu .dropdown-header {
+	color: #333;
+}
+
+nav.navbar.main-navbar#mynavbar.white-color {
+	background-color: white;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+	transition: 0.5s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+nav.navbar#mynavbar .navbar-nav a.black-color1 ,
+nav.navbar#mynavbar a.navbar-brand.black-color1 ,
+nav.navbar#mynavbar .navbar-search-link > li:last-child a.black-color1
+{
+	color: #444;
+	border: unset;
+}
+
+
+/* -----------------------------------------------------
+			Navbar [=====#mynav1======] Header 4
+   ----------------------------------------------------- */
+
+nav.navbar {
+	transition: all 0.5s;
+}
+
+
+nav.navbar#mynav1.height {
+	background-color: #4e73df;
+	height: 70px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+nav.navbar#mynav1.navbar-colored{
+	background:#4e73df;
+}
+
+nav.navbar#mynav1 .navbar-collapse > ul > li > a {
+	color: #fff;
+}
+
+nav.navbar#mynav1 .navbar-collapse > ul > li:hover > a ,
+nav.navbar#mynav1 .navbar-collapse > ul > li > a:focus
+{
+	color: black !important;
+}
+
+
+nav.navbar#mynav1 .navbar-collapse > ul > li.active > a{
+	color: black;
+}
+
+nav.navbar#mynav1 .navbar-collapse > .navbar-nav > li .dropdown-menu li a:hover ,
+nav.navbar#mynav1 .navbar-collapse > .navbar-nav > li .dropdown-menu li a:focus ,
+nav.navbar#mynav1 .navbar-collapse > .navbar-nav > li .dropdown-menu li.active > a ,
+nav.navbar#mynav1 .navbar-collapse > .navbar-nav > li .dropdown-menu li.active a:hover 
+{
+	background-color: black;
+	color: white;
+}
+
+nav.navbar#mynav1 li.dropdown-submenu:hover .dropdown-toggle {
+	background-color: black;
+	color: white;
+}
+
+
+/*======================Navbar Brand ====================*/
+
+nav.navbar#mynav1 .navbar-brand {
+  color:#fff ;
+  font-weight:900;
+}
+
+nav.navbar#mynav1 .navbar-brand span{
+  color:#000;
+}
+
+nav.navbar#mynav1 .header-search .fa{
+	color:#000 ;
+}
+
+nav.navbar#mynav1 .navbar-search-link > li:last-child a{
+	border:1px solid #fff;
+	color:#fff;
+	border-radius:100%;
+}
+
+/*======================Navbar Brand for #mynav1 Ends====================*/
+
+
+/*===========================Arrow in Submenu starts===============================*/
+
+nav.navbar#mynav1 .dropdown-submenu:hover > a:after,
+nav.navbar#mynav1 .dropdown-submenu.active > a:after{
+	border-left-color:#000;
+}
+
+nav.navbar#mynav1 .dropdown-submenu > a:after {
+    border-color: transparent;
+    border-style: solid;
+     border-width: 5px 0 5px 5px; 
+    border-left-color: #cccccc;
+}
+
+nav.navbar#mynav1 .navbar-nav > li::before {
+	background-color: black;
+}
+
+nav.navbar#mynav1 .dropdown-submenu > a:after {
+	color: #B5B5B5FF;
+}
+
+
+nav.navbar#mynav1 .navbar-collapse > ul.navbar-nav > li.dropdown ul.dropdown-menu li.dropdown-submenu:hover a:after {
+	color: black;
+}
+
+
+/*===========================Arrow in Submenu Ends===============================*/
+
+nav.navbar#mynav1 .navbar-nav li .dropdown-menu li a{
+	border-bottom:1px solid #ebebeb;
+}
+
+
+nav.navbar#mynav1 .navbar-nav li .dropdown-menu li:first-child ,
+nav.navbar#mynav1 .navbar-nav li .dropdown-menu li:last-child a 
+{
+	border-bottom:unset;
+}
+
+
+nav.navbar#mynav1 .navbar-nav > li.dropdown > .dropdown-menu {
+	margin: -4px;
+	padding: 0;
+	border-top: 0;
+	border-radius: 0 0 5px 5px;
+	outline: none;
+}
+
+nav.navbar#mynav1 .mega-dropdown-menu .dropdown-header span {
+	color: #4e73df;
+}
+
+nav.navbar#mynav1 .mega-dropdown-menu .dropdown-header {
+	color: #333;
+}
+
+.main-navbar .navbar-nav li .mega-dropdown-menu ul li a {
+	color: #444;
+}
+
+
+/* -----------------------------------------------------
+			Navbar [=====#mynav1======] Header 5
+   ----------------------------------------------------- */
+
+nav.navbar {
+	transition: all 1s;
+}
+
+
+nav.navbar#mynavbar-2 .navbar-collapse  ul li a 
+{
+	color: #444;
+}
+
+nav.navbar#mynavbar-2 .navbar-collapse > ul > li.active > a{
+	color: #4e73df;
+}
+
+
+nav.navbar#mynavbar-2 .navbar-collapse > .navbar-nav > li .dropdown-menu li a:hover ,
+nav.navbar#mynavbar-2 .navbar-collapse > .navbar-nav > li .dropdown-menu li a:focus ,
+nav.navbar#mynavbar-2 .navbar-collapse > .navbar-nav > li .dropdown-menu li.active > a ,
+nav.navbar#mynavbar-2 .navbar-collapse > .navbar-nav > li .dropdown-menu li.active a:hover 
+{
+	background-color: #4e73df;
+	color: black;
+}
+
+nav.navbar#mynavbar-2 li.dropdown-submenu:hover .dropdown-toggle {
+	background-color: #4e73df;
+	color: black;
+}
+
+
+/*======================Navbar Brand ====================*/
+
+nav.navbar#mynavbar-2.navbar-light .navbar-brand {
+  color:#fff;
+  font-weight:900;
+}
+  
+nav.navbar#mynavbar-2 .navbar-brand {
+  color:#000;
+  font-weight:900;
+}
+
+nav.navbar#mynavbar-2 .navbar-brand span{
+  color:#4e73df;
+}
+
+nav.navbar#mynavbar-2 .header-search .fa{
+	color:#4e73df;
+}
+
+nav.navbar#mynavbar-2 .navbar-search-link > li:last-child a{
+	border:1px solid #4e73df;
+	color:#4e73df;
+	border-radius:100%;
+}
+
+/*======================Navbar Brand for #mynavbar-2 Ends====================*/
+
+
+/*===========================Arrow in Submenu starts===============================*/
+
+nav.navbar#mynavbar-2 .dropdown-submenu:hover > a:after,
+nav.navbar#mynavbar-2 .dropdown-submenu.active > a:after{
+	border-left-color:#000;
+}
+
+nav.navbar#mynavbar-2 .dropdown-submenu > a:after {
+    border-color: transparent;
+    border-style: solid;
+     border-width: 5px 0 5px 5px; 
+    border-left-color: #cccccc;
+}
+
+nav.navbar#mynavbar-2 .navbar-nav > li::before {
+	background-color: #4e73df;
+}
+
+nav.navbar#mynavbar-2 > a:after {
+	color: #B5B5B5FF;
+}
+
+
+nav.navbar#mynavbar-2 .navbar-collapse > ul.navbar-nav > li.dropdown ul.dropdown-menu li.dropdown-submenu:hover a:after {
+	color: black;
+}
+
+
+/*===========================Arrow in Submenu Ends===============================*/
+
+nav.navbar#mynavbar-2 .navbar-nav li .dropdown-menu li a{
+	border-bottom:1px solid #ebebeb;
+}
+
+
+nav.navbar#mynavbar-2 .navbar-nav li .dropdown-menu li:first-child ,
+nav.navbar#mynavbar-2 .navbar-nav li .dropdown-menu li:last-child a 
+{
+	border-bottom:unset;
+}
+
+nav.navbar#mynavbar-2 .navbar-search-link > li:last-child a{
+	border:1px solid #4e73df;
+	color:#4e73df;
+	border-radius:100%;
+}
+
+nav.navbar#mynavbar-2 .navbar-nav > li.dropdown > .dropdown-menu {
+	margin: -1px;
+	padding: 0;
+	border-top: 0;
+	border-radius: 0 0 5px 5px;
+	outline: none;
+}
+
+nav.navbar#mynavbar-2 .mega-dropdown-menu .dropdown-header span {
+	color: #4e73df;
+}
+
+nav.navbar#mynavbar-2 .mega-dropdown-menu .dropdown-header {
+	color: #333;
+}
+
+
+/* -----------------------------------------------------
+			Navbar [=====#mynav1======] Header 6
+   ----------------------------------------------------- */
+
+nav.navbar {
+	transition: height 0.5s;
+}
+
+nav.navbar#mynavbar-3 {
+	background-color: rgba(0,0,0,0.7);
+}
+
+nav.navbar#mynavbar-3.height {
+	background-color: #000;
+	height: 70px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+
+nav.navbar#mynavbar-3 .navbar-collapse > ul > li > a 
+{
+	color: #fff;
+}
+
+nav.navbar#mynavbar-3 .navbar-collapse > ul > li.active > a{
+	color: #4e73df;
+}
+
+
+nav.navbar#mynavbar-3 .navbar-collapse > .navbar-nav > li .dropdown-menu li a:hover ,
+nav.navbar#mynavbar-3 .navbar-collapse > .navbar-nav > li .dropdown-menu li a:focus ,
+nav.navbar#mynavbar-3 .navbar-collapse > .navbar-nav > li .dropdown-menu li.active > a ,
+nav.navbar#mynavbar-3 .navbar-collapse > .navbar-nav > li .dropdown-menu li.active a:hover 
+{
+	background-color: #4e73df;
+	color: black;
+}
+
+nav.navbar#mynavbar-3 li.dropdown-submenu:hover .dropdown-toggle {
+	background-color: #4e73df;
+	color: black;
+}
+
+
+/*======================Navbar Brand ====================*/
+
+nav.navbar#mynavbar-3.navbar-light .navbar-brand {
+  color:#fff;
+  font-weight:900;
+}
+  
+nav.navbar#mynavbar-3 .navbar-brand {
+  color:#000;
+  font-weight:900;
+}
+
+nav.navbar#mynavbar-3 .navbar-brand span{
+  color:#4e73df;
+}
+
+nav.navbar#mynavbar-3 .header-search .fa{
+	color:#4e73df;
+}
+
+nav.navbar#mynavbar-3 .navbar-search-link > li:last-child a{
+	border:1px solid #4e73df;
+	color:#4e73df;
+	border-radius:100%;
+}
+
+/*======================Navbar Brand for #mynavbar-3 Ends====================*/
+
+
+/*===========================Arrow in Submenu starts===============================*/
+
+nav.navbar#mynavbar-3 .dropdown-submenu:hover > a:after,
+nav.navbar#mynavbar-3 .dropdown-submenu.active > a:after{
+	border-left-color:#000;
+}
+
+nav.navbar#mynavbar-3 .dropdown-submenu > a:after {
+    border-color: transparent;
+    border-style: solid;
+     border-width: 5px 0 5px 5px; 
+    border-left-color: #cccccc;
+}
+
+nav.navbar#mynavbar-3 .navbar-nav > li::before {
+	background-color: #4e73df;
+}
+
+nav.navbar#mynavbar-3 > a:after {
+	color: #B5B5B5FF;
+}
+
+
+nav.navbar#mynavbar-3 .navbar-collapse > ul.navbar-nav > li.dropdown ul.dropdown-menu li.dropdown-submenu:hover a:after {
+	color: black;
+}
+
+
+/*===========================Arrow in Submenu Ends===============================*/
+
+nav.navbar#mynavbar-3 .navbar-toggler {
+	color: white;
+}
+
+nav.navbar#mynavbar-3 .navbar-nav li .dropdown-menu li a{
+	border-bottom:1px solid #ebebeb;
+}
+
+
+nav.navbar#mynavbar-3 .navbar-nav li .dropdown-menu li:first-child ,
+nav.navbar#mynavbar-3 .navbar-nav li .dropdown-menu li:last-child a 
+{
+	border-bottom:unset;
+}
+
+nav.navbar#mynavbar-3 .navbar-search-link > li:last-child a{
+	border:1px solid #4e73df;
+	color:#4e73df;
+	border-radius:100%;
+}
+
+nav.navbar#mynavbar-3 .navbar-nav > li.dropdown > .dropdown-menu {
+	margin: -5px;
+	padding: 0;
+	border-top: 0;
+	border-radius: 0 0 5px 5px;
+	outline: none;
+}
+
+nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header span {
+	color: #4e73df;
+}
+
+nav.navbar#mynavbar-3 .mega-dropdown-menu .dropdown-header {
+	color: #333;
+}
+
+@media(max-width:576px){
+
+nav.navbar#mynavbar-1 .navbar-brand ,
+nav.navbar#mynavbar .navbar-brand ,
+nav.navbar#mynav1 .navbar-brand ,
+nav.navbar#mynavbar-2 .navbar-brand ,
+nav.navbar#mynavbar-3 .navbar-brand 
+
+{
+	font-size: 22px !important;
+}
+
+nav.navbar#mynavbar-1 .navbar-brand .fa ,
+nav.navbar#mynavbar .navbar-brand .fa ,
+nav.navbar#mynav1 .navbar-brand .fa ,
+nav.navbar#mynavbar-2 .navbar-brand .fa ,
+nav.navbar#mynavbar-3 .navbar-brand .fa 
+{
+ 	font-size: 26px;
+}
+
+}
+
+/************* SEARCH-OVERLAY *************/
+
+.overlay {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+
+#menu-button{
+	color:black;
+}
+
+#close-button{
+	color:#818181;
+}
+
+#close-button:hover{
+	color:#f1f1f1;
+}
+
+.overlay-content form input{
+	background:rgba(255,255,255,0.2);
+	border:0px;
+	border-radius:0px;
+	color:white;
+}
+
+.overlay-content form input:focus{
+	box-shadow:none;
+	border-color:white;
+}
+
+.overlay-content form .input-group-btn .btn{
+	background:#818181;
+}
+
+.overlay-content form .input-group-btn .btn:hover{
+	background:white;
+}
+
+.overlay-content form input,
+.overlay-content form .input-group-btn .btn{
+	height:60px;
+}
+
+/*************** SIDEBAR NAV ***************/
+
+#sidebar{
+	background:white;
+	box-shadow:0px 0px 20px rgba(0,0,0,0.3);
+}
+
+#sidebar::-webkit-scrollbar{
+    width: 0.5em;
+	background:#f2f2f2;
+}
+ 
+#sidebar::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+#sidebar::-webkit-scrollbar-thumb{
+	background-color:#303030;
+	outline: 1px solid slategrey;
+}
+
+#sidebar #web-name{
+	background:#4e73df !important;
+	color:white;
+}
+
+#sidebar #web-name::after{
+	background:#303030;
+	transform:rotate(43deg);
+}
+
+.sidenav #dismiss .btn{
+	color:white;
+	background:transparent;
+}
+
+#main-menu .list-group.panel{
+	border:0;
+}
+
+#main-menu .list-group > a.items-list{
+	border-radius:0px;
+	border-left:0px;
+	border-right:0px;
+	border-color:#f6f6f6;
+	color:#303030;
+}
+
+#main-menu .list-group > .sub-menu > a.items-list{
+	color:#555;
+}
+
+#main-menu .list-group a.items-list,
+#main-menu .list-group .sub-menu > a.items-list
+{
+ 	text-decoration: none;
+}
+
+#main-menu .list-group > a.items-list:first-child{
+	border-top:0px;
+}
+
+#main-menu .list-group > a.items-list.active,
+#main-menu .list-group > a.items-list:focus,
+#main-menu .list-group > a.items-list:hover{
+	background:#303030;
+	color:white;
+}
+
+#main-menu .list-group > a.items-list > span > i.link-icon{
+	color:#4e73df;
+}
+
+#main-menu .list-group > a.items-list > span > i.arrow{
+	color:#4e73df;
+}
+
+#main-menu .list-group .sub-menu .list-group-heading span{
+	color:#4e73df;
+}
+
+#main-menu .list-group .sub-menu > a.items-list{
+	background:#f8f8f8;
+	border-color:#f1f1f1;
+	border-radius:0px;
+}
+
+#main-menu .list-group .sub-menu > a.items-list.active,
+#main-menu .list-group .sub-menu > a.items-list:hover,
+#main-menu .list-group .sub-menu > a.items-list:focus{
+	background:#D8D8D8;	
+	color:#303030;
+}
+
+#main-menu .list-group .sub-menu.mega-sub-menu > a.items-list{
+	border-top-color:#e7e7e7;
+}
+
+#main-menu .list-group .mega-sub-menu > a.items-list span i.arrow,
+#main-menu .list-group .mega-sub-menu .mega-sub-menu-links a.items-list{
+	color:#8c8c8c;
+}
+
+#main-menu .list-group .mega-sub-menu > a.items-list.active span i.arrow,
+#main-menu .list-group .mega-sub-menu > a.items-list:hover span i.arrow{
+	color:#000;
+}
+
+#main-menu .list-group .mega-sub-menu .mega-sub-menu-links a.items-list.active,
+#main-menu .list-group .mega-sub-menu .mega-sub-menu-links a.items-list:hover{
+	background:#E5E5E5;
+}
+
+@media(min-width:1200px){
+	
+	#sidebar{
+		/*transform:translateX(120%) !important;*/
+	}
+}
+	
+/* -----------------------------------------------------
+		Slider
+   ----------------------------------------------------- */
+
+.flexslider.slider{
+	border:0px;
+	border-radius:0px;
+	background:none;
+}
+
+.flexslider li .meta,
+.flexslider li .meta p{
+	color:white;
+}
+
+.flexslider li .meta .highlight-price{
+	background:#4e73df;
+}
+
+.flexslider li .meta .btn{
+	background:transparent;
+	color:white;
+	border:1px solid white;
+}
+
+.flexslider li .meta .btn:hover{
+	background:white;
+	color:#333;
+	border:1px solid white;
+}
+
+/* -----------------------------------------------------
+		Search Tabs
+   ----------------------------------------------------- */
+
+.nav-tabs .nav-link.active {
+    color: white;
+    background-color: #4e73df;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+
+.search-tabs .nav-tabs li a{
+	background:#000;
+	border-radius:0px;
+	color:white;
+}
+
+.search-tabs .nav-tabs li:hover a{
+	border-color:transparent;
+}
+
+.search-tabs .nav-tabs .nav-link.active {
+	background:white;
+	border-radius:0px;
+	color:#808285;
+	border:2px solid white;
+	border-bottom:0px;	
+}
+
+.search-tabs .nav-tabs li.active a{
+	background:white;
+	border-radius:0px;
+	color:#808285;
+	border:2px solid white;
+	border-bottom:0px;
+}
+
+.search-tabs .nav-tabs li .fa{
+	color:#4e73df;
+}
+
+.search-tabs .tab-content .tab-pane{
+	background:white;
+}
+
+.search-tabs .tab-content .tab-pane .form-group .fa{
+	color:#4e73df;
+}
+
+.search-tabs .tab-content .tab-pane input,
+.search-tabs .tab-content .tab-pane select{
+	border-radius:0px;
+	color:#000;
+	border-color:#e2e3e4;
+	box-shadow:none;
+}
+
+.search-tabs .tab-content .tab-pane input::placeholder{
+	color:#000;
+}
+
+.search-tabs .tab-content .tab-pane select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/************* SEARCH-TABS-2 *************/
+
+#search-tabs-2 .nav-tabs li.active a,
+#search-tabs-2 .nav-tabs li.active .fa{
+	color:#66686a;
+}
+
+#search-tabs-2 .nav-tabs .nav-link.active a ,
+#search-tabs-2 .nav-tabs .nav-link.active .fa
+{
+	color:#66686a;
+}
+
+/************* SEARCH-TABS-3 *************/
+
+#search-tabs-3 .nav-tabs{
+	border-bottom-color:transparent;
+}
+
+#search-tabs-3 .nav-tabs li a,
+#search-tabs-3 .nav-tabs li.active a{
+	border:0px;
+}
+
+#search-tabs-3 .nav-tabs li.active a,
+#search-tabs-3 .nav-tabs li.active .fa{
+	color:#66686a;
+}
+
+
+#search-tabs-3 .nav-tabs .nav-link.active a ,
+#search-tabs-3 .nav-tabs .nav-link.active .fa
+{
+	color:#66686a;
+}
+
+#search-tabs-3 .nav-tabs li.active a{
+	background:rgba(255,255,255,0.9);
+}
+
+#search-tabs-3 .tab-pane{
+	background:rgba(255,255,255,0.9);
+}
+
+#search-tabs-3 .tab-pane form input,
+#search-tabs-3 .tab-pane form input::placeholder,
+#search-tabs-3 .tab-pane form select{
+	color:#8c8d8f;	
+}
+
+#search-tabs-3 .tab-pane form select option{
+	color:#000;
+}
+
+.welcome-message{
+	background:rgba(0,0,0,0.8);
+	color:#4e73df;
+}
+
+.welcome-message p{
+	color:white;
+}
+
+/************* SEARCH-TABS-4 *************/
+
+#search-tabs-4 .nav-tabs li.active a,
+#search-tabs-4 .nav-tabs li.active .fa{
+	color:#66686a;
+}
+
+#search-tabs-4 .nav-tabs .nav-link.active ,
+#search-tabs-4 .nav-tabs .nav-link.active .fa
+{
+	color:#66686a;
+}
+
+#search-tabs-4 .tab-pane{
+	border-bottom:1px solid #e2e3e4;
+}
+
+/************* SEARCH-TABS-5 *************/
+
+#search-tabs-5 .tab-pane{
+	background:#efeff0;
+}
+
+/* -----------------------------------------------------
+		Main Block
+   ----------------------------------------------------- */
+
+.main-block:hover{
+	transform:translateY(-10px);
+}
+
+.main-block:hover .main-img img{
+	transform:scale(1.15);
+} 
+
+.main-info{
+	background:white;
+}
+
+.main-info .main-title a{
+	color:#000;
+}
+
+.rating .fa.lightgrey{
+	color:#d1d3d4;
+}
+
+.rating .fa.orange{
+	color:#4e73df;
+}
+
+.rating .fa.grey{
+	color:#8b8e90;
+}
+
+.arrow .fa{
+	background:#8e8f91;
+	color:white;
+	border-radius:100%;
+}
+
+.arrow .fa:hover{
+	background:#4e73df;
+	color:white;
+}
+
+/************** OFFER-PRICE-1 *************/
+
+.offer-price-1 li.price{
+	color:white;
+}
+
+.offer-price-1 li.price .divider,
+.offer-price-1 li.price .pkg{
+	color:#b6b6b6;
+}
+
+/************** OFFER-PRICE-2 *************/
+
+.offer-price-2{
+	background:#000;
+	color:white;
+}
+
+.offer-price-2 .arrow .fa{
+	background:#4e73df;
+}
+
+/**************** OFFER-TAG ***************/
+
+.offer-tag{
+	background:#e01a33;	
+	color:white;
+	transform:rotate(45deg);
+	box-shadow:0px 3px 5px rgba(0,0,0,0.2);
+}
+
+/* -----------------------------------------------------
+		Hotel Block
+   ----------------------------------------------------- */
+
+.hotel-block:hover .hotel-info{
+	box-shadow:0px 4px 8px rgba(0,0,0,0.15);
+}
+
+.main-mask{
+	background:rgba(0,0,0,0.8);
+}
+
+.hotel-info{
+	box-shadow:0px 4px 6px rgba(0,0,0,0.07);
+	border:1px solid #e6e7e8;
+}
+
+/************* HOTEL-HOMEPAGE *************/
+
+#hotel-homepage #hotel-offers{
+	background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/hotel-offers.jpg) 50% 80%;
+	background-size:cover;
+}
+
+
+/* -----------------------------------------------------
+		Tour Block
+   ----------------------------------------------------- */
+
+#main-homepage #tour-offers{
+	background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/tour-offers.jpg) 50% 0%;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+.tour-block:hover{
+	box-shadow:0px 0px 16px rgba(0,0,0,0.15);
+}
+
+.tour-block .tour-info{
+	border:1px solid #e6e7e8;
+}
+
+/************* TOUR-HOMEPAGE *************/
+
+#tour-homepage #tour-offers .tour-block .tour-info{
+	background:#f8f8f8;
+}
+
+/* -----------------------------------------------------
+		Cruise Block
+   ----------------------------------------------------- */
+
+.cruise-block:hover{
+	box-shadow:0px 0px 16px rgba(0,0,0,0.15);
+}
+
+.cruise-block{
+	border:1px solid #e6e7e8;
+}
+
+.cruise-info .cruise-title a{
+	color:#231f20;
+}
+
+.cruise-price{
+	color:#104096;
+}
+
+.cruise-mask{
+	background:white;
+}
+
+.cruise-mask p{
+	color:#2d2d2d;
+}
+
+#owl-cruise-offers .owl-controls .owl-buttons .owl-prev,
+#owl-cruise-offers .owl-controls .owl-buttons .owl-next{
+	border-radius:100%;
+}
+
+/* -----------------------------------------------------
+		Flight Block
+   ----------------------------------------------------- */
+
+.flight-block:hover{
+	box-shadow:0px 0px 16px rgba(0,0,0,0.15);
+}
+
+.flight-img{
+	border:1px solid #e6e7e8;
+	background:white;
+}
+
+.flight-title{
+	background:#4e73df;
+	color:#1e1e1e;
+}
+
+.flight-timing{
+	background:#ededee;
+	color:#6d6e71;
+}
+
+.flight-timing ul{
+	background:#ededee;
+}
+
+.flight-timing{
+	border-left:1px solid #e6e7e8;
+	border-right:1px solid #e6e7e8;
+}
+
+.flight-timing li:first-child{
+	border-right:1px solid #dedfe0;
+}
+
+.flight-timing li .fa{
+	color:#4e73df;
+}
+
+.flight-timing li:nth-child(2) .fa{
+	transform:rotate(83deg);
+}
+
+.flight-info .offer-price-1{
+	background:#1e1e1e;
+}
+
+.flight-info .offer-price-1 li.price .pkg{
+	color:white;
+}
+
+@media(min-width:992px) and (max-width:1199px){
+	
+	.flight-timing li:first-child{
+		border-right:0px;
+	}
+}
+
+@media(max-width:420px){
+	
+	.flight-timing li:first-child{
+		border-right:0px;
+	}
+}
+
+/*********** FLIGHT-HOMEPAGE ***********/
+
+#flight-homepage #flight-offers{
+	background:#f1f1f1;
+}
+
+#flight-homepage .flight-img{
+	border:0px;
+}
+
+/* -----------------------------------------------------
+		Destination Block
+   ----------------------------------------------------- */
+   
+.destination-block{
+	border:1px solid #e6e7e8;
+}
+
+.destination-block:hover{
+	box-shadow:0px 0px 16px rgba(0,0,0,0.15);
+}
+
+.destination-info{
+	background:white;
+}
+
+.destination-title a,
+.destination-title .country{
+	color:#000;
+}
+
+.destination-title .destination-price{
+	color:#4e73df;
+}
+ 
+.destination-title .btn{
+	color:white;
+}
+
+/* -----------------------------------------------------
+		Vehicle Block
+   ----------------------------------------------------- */
+
+.vehicle-time{
+	background:white;
+	border:1px solid #e6e7e8;
+}
+
+.vehicle-info{
+	box-shadow:0px 4px 6px rgba(0,0,0,0.07);
+	border:1px solid #e6e7e8;
+}
+
+.vehicle-block:hover .vehicle-info{
+	box-shadow:0px 4px 8px rgba(0,0,0,0.15);
+}
+
+.vehicle-info .vehicle-title p{
+	color:#a7a9ac;
+}
+
+/************* CAR-OFFER-BLOCK *************/
+
+.car-offer-block:hover{
+	box-shadow:0px 4px 16px rgba(0,0,0,0.15);
+}
+
+.car-offer-info{
+	background:#efeff0;
+}
+
+.car-offer-info li a{
+	color:#000;
+}
+
+.car-offer-info li .car-offer-price{
+	color:#4e73df;
+}
+
+.car-offer-info li .limit{
+	color:#575757;
+}
+
+#owl-car-offers .owl-controls .owl-buttons .owl-prev,
+#owl-car-offers .owl-controls .owl-buttons .owl-next{
+	border-radius:100%;
+}
+
+/* -----------------------------------------------------
+		Gallery
+   ----------------------------------------------------- */
+
+.gallery-block .gallery-mask{
+	background:rgba(0,0,0,0.8);
+	border-bottom:6px solid #4e73df;
+}
+
+.gallery-block:hover .gallery-mask{
+	opacity:1;
+}
+
+.gallery-block:hover .gallery-title{
+	transform:translateX(0%);
+}
+
+.gallery-block .gallery-mask .gallery-title h2{
+	color:white;
+}
+
+.gallery-block .gallery-mask .image-link,
+.gallery-block .gallery-mask .gallery-title p{
+	color:#4e73df;
+}
+   
+/* -----------------------------------------------------
+		Best Features
+   ----------------------------------------------------- */
+
+.b-feature-block:hover .fa{
+	transform:rotateY(180deg);
+}
+
+/************* BLACK-FEATURES *************/
+
+#best-features.black-features{
+	background:#232323;
+	color:white;
+}
+
+#best-features.black-features .b-feature-block .fa{
+	border:3px solid #4e73df;
+	color:#4e73df;
+}
+
+#best-features.black-features .b-feature-block:hover .fa{
+	background:#4e73df;
+	color:white;
+}
+
+#best-features.black-features .b-feature-block p{
+	color:white;
+}
+
+/*********** LIGHTGREY-FEATURES ***********/
+
+#best-features.lightgrey-features{	
+	background:#f5f5f5;
+	color:#000;
+}
+
+#best-features.lightgrey-features .b-feature-block .fa{
+	border:3px solid #000;
+	color:white;
+	background:#000;
+}
+
+#best-features.lightgrey-features .b-feature-block:hover .fa{
+	color:#000;
+	background:transparent;
+}
+
+#best-features.lightgrey-features .b-feature-block p{
+	color:#000;
+}
+
+/************* ORANGE FEATURES ************/
+
+#best-features.orange-features{
+	background:#4e73df;
+	color:#000;
+}
+
+#best-features.orange-features .b-feature-block .fa{
+	border:3px solid #000;
+	color:white;
+	background:#000;
+}
+
+#best-features.orange-features .b-feature-block:hover .fa{
+	color:#000;
+	background:transparent;
+}
+
+#best-features.orange-features .b-feature-block p{
+	color:#000;
+}
+
+/* -----------------------------------------------------
+		Luxury Offers
+   ----------------------------------------------------- */
+
+.luxury-text h2,
+.luxury-text p{
+	color:#000;
+}
+
+/*************** ROOMS-OFFER ***************/
+
+#luxury-rooms .row{
+	background:#4e73df;
+}
+
+.luxury-room-text{
+	background:#efeff0;
+	color:#000;
+}
+
+.luxury-room-text .btn-black:hover{
+	background:white;
+	color:#000;
+}
+
+/*************** TOUR-OFFER ****************/
+
+#hot-tour .row{
+	background:#f1f2f2;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.hot-tour-text p{
+	color:#949494;
+}
+
+.hot-tour-text .btn-details{
+	background:#a7a7a7;
+	color:white;
+}
+
+.hot-tour-text .btn-details:hover{
+	background:#000;
+	color:white;
+}
+
+/************** CRUISE-OFFER ***************/
+
+#cruise-offer-banner{
+	background:#4e73df;
+	color:white;
+}
+
+#cruise-offer-banner p{
+	color:white;
+}
+
+.cruise-offer-text .btn:hover{
+	background:white;
+	color:#4e73df;
+}
+
+/**************** CAR-OFFER ****************/
+
+.luxury-car-text{
+	border:3px solid #4e73df;
+}
+
+/* -----------------------------------------------------
+		Banners
+   ----------------------------------------------------- */
+
+/************** VIDEO-BANNER **************/
+  
+#video-banner{
+	background: linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url('../images/video-banner.jpg') 50% 37%;
+	background-size:140%;
+}
+
+#video-banner h2,
+#video-banner p{
+	color:white;
+}
+
+#video-banner #play-button .fa{
+	border-radius:100%;
+	background:rgba(44, 38, 34,0.79);
+	border:4px solid #4e73df;
+	color:#4e73df;
+}
+
+/************* MESSAGE-BANNER *************/
+
+#message-banner{
+	background: linear-gradient(rgba(0, 0, 0,0.76),rgba(0, 0, 0,0.76)),url('../images/message-banner.jpg') 50% 66%;
+	background-size:140%;
+	color:white;
+}
+
+#message-banner p{
+	color:white;
+}
+
+/************* SEARCH-BANNER *************/
+
+#search-banner{
+	background: linear-gradient(rgba(250, 166, 26,0.8),rgba(250, 166, 26,0.8)),url('../images/message-banner.jpg') 50% 66%;
+	background-size:140%;
+	color:white;
+}
+
+#search-banner p{
+	color:white;
+}
+
+#search-banner h2{
+	color:#1b1819;
+}
+
+#search-banner .btn:hover{
+	background:white;
+	color:#1b1819;
+}
+
+/* -----------------------------------------------------
+		Highlights
+   ----------------------------------------------------- */
+
+#highlights{
+	background: linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url('../images/highlights.jpg') 50% 87%;
+	background-size:145%;
+	color:white;
+}
+
+.highlight-box .h-icon{
+	color:#4e73df;
+}
+
+.highlight-box .h-text p{
+	color:white;
+}
+
+/************** HIGHLIGHTS-2 ***************/
+
+#highlights.highlights-2{
+	background:white;
+}
+
+#highlights.highlights-2.highlights-grey{
+	background:#f2f2f2;
+}
+
+#highlights.highlights-2 .highlight-box .h-text .numbers,
+#highlights.highlights-2 .highlight-box .h-text p{
+	color:#808285;
+}
+
+/************* CRUISE HOMEPAGE *************/
+
+#cruise-homepage #highlights{
+	background:#f2f2f2;
+}
+
+/* -----------------------------------------------------
+		Testimonials
+   ----------------------------------------------------- */
+
+#testimonials{
+	background: linear-gradient(rgba(0, 0, 0,0.8),rgba(0, 0, 0,0.8)),url('../images/testimonials.jpg') 50% 87%;
+	background-size:145%;
+	background-attachment:fixed;
+	color:white;
+}
+
+/************* QUOTE-CAROUSEL *************/
+
+#quote-carousel .carousel-item blockquote{
+	border-left:0px;
+}
+
+#quote-carousel .carousel-indicators li {
+    border: 2px solid #CCC;
+    border-radius: 50px;
+}
+
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    border-radius: 100px;
+    border: 4px solid #4e73df;
+}
+
+/************* FLIGHT-HOMEPAGE *************/
+
+#flight-homepage #testimonials{
+	background: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.7)),url('../images/flight-testimonials.jpg') center center;
+	background-size:cover;
+	background-attachment:fixed;
+	color:white;
+}
+
+/************** HOTEL-HOMEPAGE *************/
+
+#hotel-homepage #testimonials{
+	background:#000;
+}
+
+#hotel-homepage #quote-carousel .carousel-item blockquote,
+#hotel-homepage #quote-carousel small{
+	color:#939598;
+}
+
+/************** TOUR-HOMEPAGE **************/
+
+#tour-homepage #testimonials{
+	background: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.7)),url('../images/tour-testimonials.jpg') center center;
+	background-size:cover;
+	background-attachment:fixed;
+	color:white;
+}
+
+/************* CRUISE-HOMEPAGE *************/
+
+#cruise-homepage #testimonials{
+	background:white;
+	color:#595b5c;
+}
+
+#cruise-homepage #quote-carousel .carousel-item .position{
+	color:#87888b;
+}
+
+/************* OWL-TESTIMONIALS *************/
+
+#owl-testimonials .review-block img{
+	border:4px solid #4e73df;
+}
+
+#owl-testimonials .owl-pagination .owl-page span{
+	background:#000;
+	opacity:1;
+}
+
+#owl-testimonials .owl-pagination .owl-page.active span{
+	background:#4e73df;
+}
+
+/* -----------------------------------------------------
+		Latest Blog
+   ----------------------------------------------------- */
+
+.latest-block:hover{
+	box-shadow:0px 4px 8px rgba(0,0,0,0.15);
+}
+
+.latest-info{
+	background:#090909;
+	color:white;
+}
+
+.latest-info li .author a{
+	color:white;
+}
+
+.latest-desc{
+	border:1px solid #e6e7e8;
+}
+
+.latest-desc .arrow .fa{
+	background:#6e6e6e;
+}
+
+.latest-desc .arrow .fa:hover{
+	background:#4e73df;
+}
+
+/* -----------------------------------------------------
+		Packages
+   ----------------------------------------------------- */
+
+.package{
+	background:white;
+}
+
+.package .pkg-features li{
+	color:#6d6e71;
+	border-bottom:1px solid #d1d3d4;
+}
+
+.package .pkg-features li:last-child{
+	border-bottom:0px;
+}
+
+/************* HOTEL-PACKAGES *************/
+
+#hotel-packages{
+	background:#eeeeee;	
+}
+
+.hotel-package:hover{
+	box-shadow:0px 0px 16px rgba(0,0,0,0.15);
+}
+
+.hotel-package.best-package{
+	background:#4e73df;
+	color:white
+}
+
+.hotel-package.best-package .h-pkg-price{
+	background:white;
+	color:#4e73df;
+}
+
+.hotel-package:hover .h-pkg-price{
+	transform:rotate(360deg);
+	box-shadow:0px 0px 16px rgba(0,0,0,0.15);
+}
+
+.hotel-package.best-package .pkg-features li{
+	color:white;
+	border-bottom:1px solid white;
+}
+
+.h-pkg-price{
+	background:#4e73df;
+	border-radius:100%;
+	color:white;
+}
+
+.hotel-package.best-package .btn{
+	background:#000;
+}
+
+.hotel-package.best-package .btn:hover{
+	background:white;
+	color:#000;
+}
+
+.hotel-package .btn{
+	background:#727272;
+	color:white;
+}
+
+.hotel-package .btn:hover{
+	background:#000;
+	color:white;
+}
+
+/*************** TOUR-PACKAGES *************/
+
+#tour-packages{
+	background:#ededed;
+}
+
+.tour-package:hover{
+	box-shadow:0px 0px 16px rgba(0,0,0,0.15);
+	transform:translateY(-10px);
+}
+
+.tour-package.best-package .t-pkg-heading{
+	background:#bb7a0f;
+}
+
+.tour-package .t-pkg-heading{
+	background:#4e73df;
+	color:white;
+}
+
+.tour-package .btn{
+	background:#313131;
+	color:white;
+}
+
+.tour-package .btn:hover{
+	background:#4e73df;
+	color:white;
+}
+
+/************* CAR-HOMEPAGE *************/
+
+#car-homepage #car-packages{
+	background:linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url('../images/car-packages.jpg') center center;
+	background-size:cover;
+}
+
+/* -----------------------------------------------------
+		Newsletter
+   ----------------------------------------------------- */
+
+
+.newsletter form input{
+	box-shadow:none;
+	border-radius:0px;
+}
+
+.newsletter form input,
+.newsletter form .input-group-btn .btn{
+	border:0px;
+}
+
+.newsletter form .input-group-btn .btn{
+	background:white;
+	color:#4e73df;
+}
+
+/************* NEWSLETTER-1 *************/
+
+#newsletter-1{
+	background:linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url('../images/newsletter.jpg') 50% 78%;
+	background-size:140%;
+	color:white;
+}
+
+#newsletter-1 p{
+	color:white;
+}
+
+#newsletter-1 form .input-group-btn .btn:hover{
+	background:#4e73df;
+	color:#000;
+}
+
+/************* NEWSLETTER-2 *************/
+
+#newsletter-2{
+	background:#4e73df;
+	color:#000;
+}
+
+#newsletter-2 form .input-group-btn .btn:hover{
+	background:#000;
+	color:white;
+}
+
+/* -----------------------------------------------------
+		Contact Form
+   ----------------------------------------------------- */
+
+#contact-form{
+	background:linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url('../images/contact-form.jpg') 50% 50%;
+	background-size:cover;
+	color:white;
+}
+
+#contact-form form{
+	background:rgba(255,255,255,0.25);
+}
+
+#contact-form .form-group .fa{
+	color:grey;
+}
+
+#contact-form .form-group input,
+#contact-form .form-group textarea{
+	border-radius:0px;
+	border:0px;
+}
+
+.contact-block{
+	color:#4e73df;
+}
+
+.contact-block:before,
+.contact-block:after,
+.border-shape:before,
+.border-shape:after{
+	background:#4e73df;
+}
+
+.contact-block p{
+	color:white;
+}
+
+/* -----------------------------------------------------
+		Footer
+   ----------------------------------------------------- */
+
+.ftr-top-grey{
+	background:#231f20;
+}
+
+.ftr-top-black{
+	background:#000;
+}
+
+.ftr-top-grey .form-control {
+    color: #2E3337;
+}
+
+.ftr-bot-black{
+	background:#0a0909;
+}
+
+#footer.ftr-heading-o .footer-heading{
+	color:#4e73df;
+}
+
+#footer.ftr-heading-w .footer-heading{
+	color:white;
+}
+
+#footer-top.ftr-text-white,
+#footer-top.ftr-text-white p,
+#footer-top.ftr-text-white a{
+	color:white;
+}
+
+#footer-top.ftr-text-grey,
+#footer-top.ftr-text-grey p,
+#footer-top.ftr-text-grey ul li{
+	color:#828282;
+}
+
+.footer-widget.ftr-about .social-links li .fa{
+	color:#939598;
+}
+
+.footer-widget.ftr-about .social-links li .fa:hover{
+	color:#4e73df;
+}
+
+.footer-widget.ftr-in-touch input,
+.footer-widget.ftr-in-touch textarea{
+	border-radius:0px;
+	border:0px;
+	background:#f2f2f2;
+}
+
+.footer-widget.ftr-in-touch .btn{
+	color:#000;
+}
+
+.footer-widget.ftr-in-touch .btn:hover{
+	color:#000;
+	background:#f49a04;
+}
+
+.footer-widget.ftr-newsletter input{
+	border:0px;
+	border-radius:0px;
+}
+
+.footer-widget.ftr-newsletter .input-group-btn .btn{
+	background:white;
+	color:#4e73df;
+}
+
+.footer-widget.ftr-newsletter .input-group-btn .btn:hover{
+	background:#4e73df;
+	color:#000;
+}
+
+.footer-widget.ftr-map iframe{
+	border:8px solid white;
+}
+
+.instagram-list li:hover img{
+	opacity:0.7;
+}
+
+#footer-bottom p,
+#footer-bottom a,
+#footer-bottom .line{
+	color:#979797;
+}
+
+#footer-bottom li:first-child:after{
+	background:#979797;
+}
+
+/* -----------------------------------------------------
+		Page Cover
+   ----------------------------------------------------- */
+   
+.page-cover{
+	color:white;
+}
+
+.page-cover::before{
+	background:linear-gradient( to right, rgba(0, 0, 0,1) 0%,rgba(0, 0, 0,1) 26%, rgba(0, 0, 0,0.6) 46%, rgba(0, 0, 0,0) 64%,rgba(0, 0, 0,0) 100%);	
+}
+
+.page-cover .breadcrumb{
+	background:none;
+}
+
+.page-cover .breadcrumb li a{
+	color:#4e73df;
+}
+
+.page-cover .breadcrumb > li + li::before,
+.page-cover .breadcrumb li.active{
+	color:white;
+}
+
+@media(max-width:768px){
+	
+	.page-cover::before{
+		background:linear-gradient( to right, rgba(0, 0, 0,1) 0%,rgba(0, 0, 0,1) 26%, rgba(0, 0, 0,0.6) 66%, rgba(0, 0, 0,0) 84%,rgba(0, 0, 0,0) 100%);	
+	}
+}
+
+/********** COVER FLIGHT PAGES **********/
+
+#cover-flight-grid-list{
+	background:url('../images/cover-flight-grid-list.jpg') 50% 40%;
+	background-size:140%;
+	color:white;
+}
+
+#cover-flight-detail{
+	background:url('../images/cover-flight-detail.jpg') 50% 20%;
+	background-size:140%;
+	color:white;
+}
+
+/*********** COVER HOTEL PAGES **********/
+
+#cover-hotel-grid-list{
+	background:url('../images/cover-hotel-grid-list.jpg') 50% 20%;
+	background-size:140%;
+	color:white;
+}
+
+#cover-hotel-detail{
+	background:url('../images/cover-hotel-detail.jpg') 50% 55%;
+	background-size:140%;
+	color:white;
+}
+
+/*********** COVER TOUR PAGES ***********/
+
+#cover-tour-grid-list{
+	background:url('../images/cover-tour-grid-list.jpg') 50% 84%;
+	background-size:140%;
+	color:white;
+}
+
+#cover-tour-detail{
+	background:url('../images/cover-tour-detail.jpg') 50% 56%;
+	background-size:140%;
+	color:white;
+}
+
+/********** COVER CRUISE PAGES **********/
+
+#cover-cruise-grid-list{
+	background:url('../images/cover-cruise-grid-list.jpg') 50% 45%;
+	background-size:cover;
+	color:white;
+}
+
+#cover-cruise-detail{
+	background:url('../images/cover-cruise-detail.jpg') 50% 25%;
+	background-size:140%;
+	color:white;
+}
+
+/************ COVER CAR PAGES ***********/
+
+#cover-car-grid-list{
+	background:url('../images/cover-car-grid-list.jpg') 50% 45%;
+	background-size:cover;
+	color:white;
+}
+
+#cover-car-detail{
+	background:url('../images/cover-car-detail.jpg') 50% 30%;
+	background-size:140%;
+	color:white;
+}
+
+/************ COVER ABOUT US ************/
+
+#cover-about-us{
+	background:url('../images/cover-about-us.jpg') 50% 45%;
+	background-size:cover;
+	color:white;
+}
+
+/********** COVER BLOG PAGES ************/
+
+#cover-blog-listing{
+	background:url('../images/cover-blog-listing.jpg') 50% 90%;
+	background-size:cover;
+}
+
+#cover-blog-details{
+	background:url('../images/cover-blog-details.jpg') 50% 90%;
+	background-size:cover;
+}
+
+/********* COVER GALLERY PAGES **********/
+
+#cover-gallery{
+	background:url('../images/cover-gallery.jpg') 50% 60%;
+	background-size:cover;
+}
+
+/********* COVER TEAM PAGES **********/
+
+#cover-team{
+	background:url('../images/cover-team.jpg') 50% 50%;
+	background-size:cover;
+}
+
+/******* COVER REGISTRATION PAGE ********/
+
+#cover-registration{
+	background:url('../images/cover-registration.jpg') 50% 36%;
+	background-size:145%;
+}
+
+/********** COVER LOGIN PAGE ************/
+
+#cover-login{
+	background:url('../images/cover-login.jpg') 50% 76%;
+	background-size:145%;
+}
+
+/****** COVER FORGOT PASSWORD PAGE ******/
+
+#cover-forgot-password{
+	background:url('../images/cover-forgot-password.jpg') 50% 32%;
+	background-size:140%;
+}
+
+/********** BEFORE YOU FLY PAGE *********/
+
+#cover-byf-info{
+	background:url('../images/cover-byf-info.jpg') center center;
+	background-size:cover;
+}
+
+/********* TRAVEL INSURANCE PAGE ********/
+
+#cover-travel-insurance{
+	background:url('../images/cover-travel-insurance.jpg') 50% 20%;
+	background-size:cover;
+}
+
+/************* HOLIDAYS PAGE ************/
+
+#cover-holiday{
+	background:url('../images/cover-holiday.jpg') 50% 30%;
+	background-size:cover;
+}
+
+/************* THANK YOU PAGE ***********/
+
+#cover-thank-you{
+	background:url('../images/cover-thank-you.jpg') 50% 50%;
+	background-size:cover;
+}
+
+/********** COVER CONTACT US ************/
+
+#cover-contact-us{
+	background:url('../images/cover-contact-us.jpg') 50% 20%;
+	background-size:cover;
+}
+
+/******* COVER BOOKING PAGES ******/
+
+#cover-flight-booking{
+	background:url('../images/cover-flight-booking.jpg') 50% 50%;
+	background-size:cover;
+}
+
+#cover-hotel-booking{
+	background:url('../images/cover-hotel-booking.jpg') 50% 55%;
+	background-size:cover;
+}
+
+#cover-tour-booking{
+	background:url('../images/cover-tour-booking.jpg') 50% 30%;
+	background-size:cover;
+}
+
+#cover-cruise-booking{
+	background:url('../images/cover-cruise-booking.jpg') 50% 50%;
+	background-size:cover;
+}
+
+#cover-car-booking{
+	background:url('../images/cover-car-booking.jpg') 50% 65%;
+	background-size:cover;
+}
+
+/******* COVER SEARCH RESULT PAGES ******/
+
+#cover-flight-search{
+	background:url('../images/cover-flight-search.jpg') 50% 50%;
+	background-size:cover;
+}
+
+#cover-hotel-search{
+	background:url('../images/cover-hotel-search.jpg') 50% 25%;
+	background-size:cover;
+}
+
+#cover-tour-search{
+	background:url('../images/cover-tour-search.jpg') 50% 20%;
+	background-size:cover;
+}
+
+#cover-cruise-search{
+	background:url('../images/cover-cruise-search.jpg') 50% 65%;
+	background-size:cover;
+}
+
+#cover-car-search{
+	background:url('../images/cover-car-search.jpg') 50% 90%;
+	background-size:cover;
+}
+
+/********* COVER NAVBAR WRAPPER **********/
+
+.cover-navbar-wrapper{
+	background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/cover-navbar-wrapper.jpg') 50% 60%;
+	background-size:cover
+}
+
+/*********** COVER BACKGROUND ************/
+
+.page-cover.back-img{
+	background:url('../images/cover-back-img.jpg') 50% 60%;
+	background-size:cover;
+}
+
+/*********** PAGE-COVER STYLE2 ***********/
+
+.page-cover.style2{
+	background:#f2f2f2;
+	color:grey;
+}
+
+.page-cover.style2 .breadcrumb li{
+	color:grey;
+}
+
+.page-cover.style2 .breadcrumb li + li::before{
+	color:grey;
+}
+
+/*********** PAGE-COVER STYLE3 ***********/
+
+.page-cover.style3{
+	background:#4e73df;
+	color:white;
+}
+
+.page-cover.style3 .breadcrumb li a{
+	color:white;
+}
+
+/*********** PAGE-COVER STYLE4 ***********/
+
+.page-cover.style4{
+	background:#404040;	
+}
+
+/*********** PAGE-COVER STYLE5 ***********/
+
+.page-cover.style5{
+	background:#4e73df;	
+}
+
+/********** COVER OFFER PAGES ************/
+
+#cover-flight-offers{
+	background:url('../images/cover-flight-offers.jpg') 50% 40%;
+	background-size:cover;
+}
+
+#cover-hotel-offers{
+	background:url('../images/cover-hotel-offers.jpg') 50% 40%;
+	background-size:cover;
+}
+
+#cover-tour-offers{
+	background:url('../images/cover-tour-offers.jpg') 50% 85%;
+	background-size:cover;
+}
+
+#cover-cruise-offers{
+	background:url('../images/cover-cruise-offers.jpg') 50% 75%;
+	background-size:cover;
+}
+
+#cover-car-offers{
+	background:url('../images/cover-car-offers.jpg') 50% 60%;
+	background-size:cover;
+}
+
+/********** COVER PRICING TABLE **********/
+
+#cover-price-table{
+	background:url('../images/cover-price-table.jpg') 50% 60%;
+	background-size:cover;
+}
+
+/********** COVER TESTIMONIALS ***********/
+
+#cover-testimonials{
+	background:url('../images/cover-testimonials.jpg') 50% 40%;
+	background-size:cover;
+}
+
+/************ COVER FAQ PAGES ************/
+
+#cover-faq{
+	background:url('../images/cover-faq.jpg') 50% 40%;
+	background-size:cover;
+}
+
+/********** COVER SERVICE PAGES **********/
+
+#cover-services{
+	background:url('../images/cover-services.jpg') 50% 50%;
+	background-size:cover;
+}
+
+/********** COVER TRAVEL GUIDE **********/
+
+#cover-travel-guide{
+	background:url('../images/cover-travel-guide.jpg') 50% 70%;
+	background-size:cover;
+}
+
+/* -----------------------------------------------------
+		Sidebar
+   ----------------------------------------------------- */
+
+.side-bar .side-bar-heading{
+	color:#444546;
+}
+
+/******** GRID/LIST PAGES SIDEBAR ********/
+
+.side-bar .filter-block{
+	background:#6d6d6d;
+}
+
+.side-bar .filter-block h3,
+.side-bar .filter-block p{
+	color:white;
+}
+
+.side-bar .filter-block{
+	border-radius:0px;
+	border:0px;
+}
+
+.side-bar .filter-block .card-header span{
+	color:#4e73df;
+}
+
+.side-bar .filter-block .card-header{
+	background:white;
+	border:0px;
+}
+
+.side-bar .filter-block .card-header a{
+	color:#808285;
+}
+
+.side-bar .filter-block .card-body{
+	border-top:1px solid #808285;
+	background:#f5f5f5;
+}
+  
+.side-bar .filter-block .price-slider input{
+	background:transparent;
+	border:0px;
+	color: white;
+}
+
+.side-bar .filter-block .price-slider .ui-widget.ui-widget-content{
+	border-radius:0px;
+	border:0px;
+	background:#9b9b9b;
+}
+
+.side-bar .filter-block .price-slider .ui-widget-header{
+	background:#4e73df;
+	border:1px solid #4e73df;
+}
+
+.side-bar .filter-block .ui-state-default, .filter-block .ui-widget-content .ui-state-default{
+	border:0px;
+	background:#4e73df;
+}
+
+.side-bar .filter-block .ui-corner-all{
+	border-radius:0px;
+}
+
+.side-bar .support-block{
+	background:#f1f2f2;
+	color:#808285;
+}
+
+.side-bar .support-block p{
+	color:#808285;
+}
+
+.side-bar .ad-block:hover .ad-mask .ad-text{
+	background:rgba(250, 166, 26,1);
+}
+
+.side-bar .ad-mask{
+	background:rgba(0,0,0,0.2);
+}
+
+.side-bar .ad-mask .ad-text{
+	background:rgba(250, 166, 26,0.9);
+	color:black;
+	border-radius:100%;
+}
+
+/********* DETAIL PAGES SIDEBAR *********/
+
+.side-bar .booking-form-block{
+	border:1px solid #e6e7e8;;
+}
+
+.side-bar .booking-form-block .selected-price{
+	background:#4e73df;
+	color:white;
+}
+
+.side-bar .booking-form .form-group .fa{
+	color:#808285;
+}
+
+.side-bar .booking-form .form-group .fa-angle-down{
+	color:#4e73df;
+}
+
+.side-bar .booking-form .form-group input,
+.side-bar .booking-form .form-group input::placeholder,
+.side-bar .booking-form .form-group select,
+.side-bar .booking-form .form-group textarea,
+.side-bar .booking-form .form-group textarea::placeholder{
+	color:#808285;	
+}
+
+.side-bar .booking-form .form-group select option{
+	color:#333;
+}
+
+.side-bar .booking-form input,
+.side-bar .booking-form select,
+.side-bar .booking-form textarea{
+	background:#f6f6f6;
+	border-radius:0px;
+	box-shadow:none;
+	border-color:#e6e7e8;
+}
+
+.side-bar .booking-form select{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.side-bar .booking-form .checkbox label{
+	color:#808285;
+}
+
+.side-bar .booking-form .checkbox label a{
+	color:#454545;
+}
+
+/********* BOOKING PAGES SIDEBAR ********/
+
+.side-bar .detail-block{
+	border:1px solid #e6e6e6;
+}
+
+.side-bar .detail-block table td{
+	border-color:#f0f0f0;
+}
+
+.side-bar .detail-block table tr:last-child{
+	background:#333;
+}
+
+.side-bar .detail-block table tr:last-child td{
+	color:white;
+}
+
+.side-bar .detail-block.style1 .detail-title{
+	background:#4e73df;
+}
+
+.side-bar .detail-block.style1 .detail-title a,
+.side-bar .detail-block.style1 .detail-title p{
+	color:#333;
+}
+
+.side-bar .detail-block.style1 table td{
+	color:grey;
+}
+
+.side-bar .detail-block.style2 .detail-price{
+	background:#4e73df;
+	color:white;
+	border-radius:0px 0px 0px 20px;
+}
+
+.side-bar .detail-block.style2 .detail-title{
+	background:linear-gradient( to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,1) 100%);
+	border-bottom:6px solid #4e73df;
+}
+
+.side-bar .detail-block.style2 .detail-title a{
+	color:#4e73df;
+}
+
+.side-bar .detail-block.style2 .detail-title p{
+	color:lightgrey;
+}
+
+.side-bar .detail-block.style2 .rating{
+	color:#4e73df;
+}
+
+.side-bar .detail-block.style2 table tr:first-child{
+	background:#f2f2f2;
+}
+
+/********** BLOG PAGES SIDEBAR **********/
+
+.side-bar .instagram li:hover{
+	opacity:0.8;
+}
+
+.side-bar .contact .c-list .icon .fa{
+	background:#e8e8e8;
+	color:#585858;
+}
+
+.side-bar .recent-post .recent-block .recent-text h5{
+	color:#383838;
+}
+
+.side-bar .recent-post .recent-block .recent-text span{
+	color:#696868;
+}
+
+.side-bar .follow-us li a{
+	color:#a9a9a9;
+}
+
+.side-bar .follow-us li a:hover{
+	color:#4e73df;
+}
+
+.side-bar .tags li .btn-g-border{
+	border-color:#9b9b9b;
+	color:#464646;
+}
+
+.side-bar .tags li .btn-g-border:hover{
+	border-color:#4e73df;
+	background:#4e73df;
+	color:white;
+}
+
+.side-bar .categories .nav-pills li a{
+	color:#696868;
+	border-radius:0px;
+	border-bottom:1px solid #e8e8e8;
+}
+
+.side-bar .categories li:first-child a{
+	border-top:1px solid #e8e8e8;
+}
+
+.side-bar .categories li:hover a,
+.side-bar .categories li.active a{
+	color:#1a1a1a;
+	background:none;
+	border-bottom-color:#1a1a1a;
+}
+
+/* -----------------------------------------------------
+		Grid Block
+   ----------------------------------------------------- */
+
+.block-title a{
+	color:#000;	
+}
+
+.block-info{
+	background:#f8f8f8;
+	border:1px solid #e6e7e8;
+}
+
+.block-info p{
+	color:#949597;
+}
+
+.block-info .block-minor{
+	color:#8c8d8f;
+}
+
+.grid-block:hover{
+	box-shadow:0px 0px 16px rgba(0,0,0,0.15);
+}
+
+/*********** FLIGHT-GRID BLOCK **********/
+
+.f-grid-block .f-img{
+	border:1px solid #e6e7e8;
+	background:white;
+}
+
+.f-grid-block .offer-price-1{
+	background:#000;
+}
+
+.f-grid-info .f-grid-time{
+	color:#858585;
+}
+
+.f-grid-info .f-grid-time .fa{
+	color:#4e73df;
+}
+
+.f-grid-desc .f-grid-code{
+	color:#57585a;
+}
+
+.f-grid-info .f-grid-timing{
+	background:white;
+}
+
+.f-grid-timing li{
+	border-top:1px solid #e6e7e8;
+	border-bottom:1px solid #e6e7e8;
+	color:#6d6e71;
+}
+
+.f-grid-timing li .fa{
+	color:#4e73df;
+}
+
+.f-grid-timing li:first-child{
+	border-bottom:0px;
+}
+
+.f-grid-timing li:nth-child(2) .fa{
+	transform:rotate(83deg);
+}
+
+/************ CAR-GRID BLOCK ************/
+
+.car-features li{
+	color:#58595b;
+}
+
+.car-features li .fa{
+	border:1px solid #e6e7e8;
+	background:white;
+	color:#58595b;
+}
+
+.car-features li:hover .fa{
+	border-color:#58595b;
+	background:#58595b;
+	color:white;
+}
+
+/* -----------------------------------------------------
+		List Block
+   ----------------------------------------------------- */
+
+.list-block:hover{
+	box-shadow:0px 0px 16px rgba(0,0,0,0.15);
+}
+
+.list-info{
+	border:1px solid #e6e7e8;
+}
+
+.list-info .block-minor{
+	color:#6d6e71;
+}
+
+/*********** FLIGHT-LIST BLOCK **********/
+
+.f-list-block{
+	border:1px solid #e6e7e8;
+}
+
+.f-list-block .offer-price-1{
+	background:#000;
+}
+
+.f-list-img .offer-price-1 .duration{
+	color:white;
+}
+
+.f-list-info{
+	border:0px;
+	background:#f6f6f6;
+	border-left:1px solid #e6e7e8;
+}
+
+.f-list-block .flight-timing{
+	border:0px;
+	background:white;
+}
+
+@media(max-width:991px){
+	
+	.f-list-block .flight-timing li:first-child{
+		border-right:0px;
+	}
+}
+
+/************ CAR-LIST BLOCK ************/
+
+.cr-list-info{
+	background:#f1f2f2;
+}
+
+/* -----------------------------------------------------
+		Pagination
+   ----------------------------------------------------- */
+   
+.pages .pagination li a{
+	border-radius:0px;
+	background:#e6e7e8;
+	color:#808285;
+	border:0px;
+}
+
+.pages .pagination li a:hover,
+.pages .pagination li.active a{
+	background:#5a5a5a;
+	color:white;
+}
+
+.pages .pagination li:first-child a:hover,
+.pages .pagination li:last-child a:hover{
+	background:#4e73df;
+	color:#000;
+}
+
+/* -----------------------------------------------------
+		Detail Pages Tabs
+   ----------------------------------------------------- */
+
+.detail-tabs .nav-tabs li a{
+	background:#939598;
+	color:white;
+	border-radius:0px;
+	border-color:#e6e7e8;
+}
+
+.detail-tabs .nav-tabs.nav-justified > .active > a{
+	border-color:#e6e7e8;
+	border-bottom-color:transparent;
+}
+
+.detail-tabs .nav-tabs .nav-link.active {
+	border-color:#e6e7e8;
+	border-bottom-color:transparent;
+	background:#f1f2f2;
+	color:#000;
+}
+
+.detail-tabs .nav-tabs li.active a{
+	background:#f1f2f2;
+	color:#000;
+}
+
+.detail-tabs .tab-content .tab-pane{
+	border:1px solid #e6e7e8;
+	border-top:0px;
+	background:#f1f2f2;
+}
+
+.detail-tabs .tab-content .tab-pane img{
+	border:8px solid white;
+}
+
+@media(max-width:768px){
+	
+	.detail-tabs .nav-tabs.nav-justified > .active > a{
+		border-bottom-color:#e6e7e8;
+	}
+	
+	.detail-tabs .tab-content .tab-pane{
+		border-top:1px solid #e6e7e8;
+	}
+}
+
+/* -----------------------------------------------------
+		Detail Pages Slider
+   ----------------------------------------------------- */
+   
+.detail-slider .features li{
+	background:rgba(0,0,0,0.6);
+	color:white;
+}
+
+.detail-slider .features li .f-icon{
+	color:#4e73df;
+}
+
+.detail-slider .features li .f-text p{
+	color:white;
+}
+
+.feature-slider-nav .slick-arrow,
+.feature-slider-nav .slick-arrow:hover,
+.feature-slider-nav .slick-arrow:focus{
+	background:#4e73df;
+}
+
+/* -----------------------------------------------------
+		Custom Forms
+   ----------------------------------------------------- */
+
+.custom-form{
+	background:#efeff0;
+}
+
+.custom-form h3{
+	color:#58595b;
+}
+
+.custom-form .form-group .fa{
+	color:#a7a9ac;
+}
+
+.custom-form .form-group input,
+.custom-form .form-group textarea{
+	border-radius:0px;
+	border:0px;
+}
+
+.custom-form .checkbox label{
+	color:#939598;
+}
+
+.custom-form .link-line,
+.custom-form .simple-link{
+	color:#6e7071;
+}
+
+.custom-form .link-line > a{
+	color:#4e73df;
+}
+
+.custom-check input[type="checkbox"] + label {
+  	color:#303030;
+}
+
+.custom-check input[type="checkbox"] + label span {
+	color:#646464;
+}
+
+.custom-check input[type="checkbox"] + label span {
+     background-color:#7e7e7e;
+}
+
+.custom-check input[type="checkbox"]:checked + label span{
+     background-color:#4e73df;
+}
+
+.custom-check input[type="checkbox"] + label span,
+.custom-check input[type="checkbox"]:checked + label span {
+  	transition:background-color .2s linear;
+	color:white;
+}
+
+/************ PAGE-SEARCH-FORM ***********/
+
+.page-search-form{
+	background:#f2f2f2;
+	border-top:4px solid #4e73df;
+	border-bottom:1px solid #4e73df;
+}
+
+.page-search-form h2 span,
+.pg-search-form label .fa{
+	color:#4e73df;
+}
+
+.page-search-form .nav-tabs{
+	border-bottom-color:#e6e6e6;
+}
+
+.page-search-form .nav-tabs li{
+	margin-bottom:0px;
+}
+
+.page-search-form .nav-tabs li a{
+	background:#e1e1e1;
+	color:grey;
+}
+
+.page-search-form .nav-tabs li.active a{
+	background:#4e73df;
+	color:white;
+	border-color:#4e73df;
+}
+
+
+.pg-search-form label{
+	color:grey;
+}
+
+.pg-search-form input,
+.pg-search-form select{
+	border-radius:0px;
+	box-shadow:none;
+}
+
+/************ LG-BOOKING-FORM ***********/
+
+.lg-booking-form .lg-booking-form-heading span{
+	background:#4e73df;
+	border-radius:100%;
+	color:white;
+}
+
+.lg-booking-form label{
+	color:grey;
+}
+
+.lg-booking-form input,
+.lg-booking-form select,
+.lg-booking-form textarea{
+	border-radius:0px;
+	box-shadow:none;
+	border:0px;
+	background:#f2f2f2;
+}
+
+.lg-booking-form input:focus,
+.lg-booking-form select:focus,
+.lg-booking-form textarea:focus{
+	border-left:4px solid #4e73df;
+	box-shadow:none;
+}
+
+.lg-booking-form .form-group select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.lg-booking-form label a{
+	color:#4e73df;
+}
+
+.lg-booking-form .payment-tabs .nav-tabs{
+	border-color:#e6e6e6;
+}
+
+.lg-booking-form .payment-tabs .tab-content{
+	border:1px solid #e6e6e6;
+	border-top:0px;
+}
+
+.lg-booking-form .payment-tabs .nav-tabs li a{
+	border-radius:0px;
+	color:grey;
+	border-top:4px solid transparent;
+}
+
+.lg-booking-form .payment-tabs .nav-tabs li.active a{
+	color:#4e73df;
+	border-top:4px solid #4e73df;
+	background:white;
+}
+
+
+.lg-booking-form .payment-tabs .nav-tabs .nav-link.active {
+    color:#4e73df;
+    border-top:4px solid #4e73df;
+    background:white;
+}
+
+
+/************ FULL PAGE FORMS ************/
+
+#full-page-form{
+	background:linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)),url('../images/cover-full-page-form.jpg') 50% 40%;
+	background-size:cover;
+}
+
+.colored-border{
+	background: linear-gradient(to right,#000000 0%,#000000 5%,#4e73df 5%,#4e73df 10%,#000000 10%,#000000 15%,#4e73df 15%,#4e73df 20%,#000000 20%,#000000 25%,#4e73df 25%,#4e73df 30%,#000000 30%,#000000 35%,#4e73df 35%,#4e73df 40%,#000000 40%,#000000 45%,#4e73df 45%,#4e73df 50%,#000000 50%,#000000 55%,#4e73df 55%,#4e73df 60%,#000000 60%,#000000 65%,#4e73df 65%,#4e73df 70%,#000000 70%,#000000 75%,#4e73df 75%,#4e73df 80%,#000000 80%,#000000 85%,#4e73df 85%,#4e73df 90%,#000000 90%,#000000 95%,#4e73df 95%,#4e73df 100%);
+}
+
+.full-page-title .company-name{
+	color:#000;
+}
+
+.full-page-title .company-name span{
+	color:#4e73df;
+}
+
+#full-page-form .full-page-title p{
+	color:#303030;
+}
+
+#full-page-form .custom-form{
+	background:white;
+	border-radius:30px;
+	box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+}
+
+#full-page-form .full-page-copyright{
+	color:white;
+	text-shadow:0px 0px 5px rgba(0,0,0,0.5);
+}
+
+#full-page-form .custom-form input{
+	background:#f2f2f2;
+}
+
+/* -----------------------------------------------------
+		Popup Ad
+   ----------------------------------------------------- */
+
+#popup-ad .modal-content{
+	border:0px;
+	border-bottom:9px solid #4e73df;
+	border-radius:0px;
+}
+
+#popup-ad .modal-content .modal-body .close{
+	color:white;
+	opacity:1;
+}
+   
+#popup-ad .modal-content .modal-body:after{
+	background:#303030;	
+	transform:rotate(45deg);
+}
+
+.popup-ad-text h2{
+	color:#000;
+}
+
+.popup-ad-text h2 span{
+	color:#4e73df;
+}
+
+/* -----------------------------------------------------
+		Extra Pages
+   ----------------------------------------------------- */
+
+/************ ABOUT US PAGE *************/
+
+#about-content{
+	background:#4e73df;
+}
+
+.about-text{
+	background:white;
+}
+
+#about-content .about-img img{
+	border:6px solid white;
+}
+
+#about-content .about-detail p:nth-of-type(1){
+	color:#4f5051;
+}
+
+.member-block:hover{
+	box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+	transform:translateY(-10px);
+}
+
+.member-img{
+	background:#f1f2f2;
+	border:1px solid #e6e7e8;
+}
+
+.member-img img{
+	border:4px solid white;
+	box-shadow:0px 4px 8px rgba(0,0,0,0.4);
+}
+
+.contact-links li .fa-facebook-square{
+	color:#00508f;
+}
+
+.contact-links li .fa-twitter-square{
+	color:#00aeef;
+}
+
+.contact-links li .fa-linkedin-square{
+	color:#004378;
+}
+
+.member-name{
+	border:1px solid #e6e7e8;
+}
+
+.member-name h3{
+	color:#4e73df;
+}
+
+#owl-team .owl-pagination span{
+	background:#000;
+}
+
+/*********** ABOUT US 2 PAGE ************/
+
+#about-content-2 #abt-cnt-2-text h2{
+	color:#4d4d4d;
+}
+
+#about-content-2 #abt-cnt-2-text h2 > span{
+	color:#333;
+}
+
+#about-content-2 #abt-cnt-2-text h2 span > span{
+	color:#4e73df;
+}
+
+#about-content-2 .abt-cnt-2-ftr .fa{
+	background:#4e73df;
+	border-radius:100%;
+	color:white;
+}
+
+#why-us-tabs .nav-tabs li a{
+	color:grey;
+	background:#f4f4f4;
+}
+
+#why-us-tabs .nav-tabs li a:hover{
+	border-color:transparent;
+}
+
+#why-us-tabs .nav-tabs li.active a{
+	background:#4e73df;
+	color:white;
+	border-color:#4e73df;
+}
+
+#why-us-tabs .nav-tabs .nav-link.active {
+	background:#4e73df;
+	color:white;
+	border-color:#4e73df;
+}
+
+#why-us-tabs .tab-content .tab-pane{
+	border:1px solid #ddd;
+	border-top:0px;
+}
+
+#why-us-tabs .tab-content .tab-pane a{
+	color:#4d4d4d;
+}
+
+#progress-bars .bar .progress-bar{
+	background:#4e73df;
+}
+
+#progress-bars .progress-bar span{
+	background:#4d4d4d;
+	color:white;
+}
+
+#progress-bars .progress-bar span::after{
+	border-style: solid;
+	border-color: #4d4d4d transparent transparent transparent;
+}
+
+#owl-company-logo .item{
+	border:1px solid #ddd;
+}
+
+/************** ERROR PAGE **************/
+
+#error-text{
+	background:linear-gradient(rgba(250, 166, 26,0.85),rgba(250, 166, 26,0.85)),url('../images/error-page.jpg') top;
+	background-size:145%;
+	color:white;
+}
+
+#error-text p{
+	color:white;
+}
+
+#error-text .btn-w-border{
+	border:2px solid white;
+}
+
+/************** ERROR PAGE 2 *************/
+
+.full-page-back{
+	background:linear-gradient(rgba(255, 255, 255,0.95),rgba(255, 255, 255,0.95)),url('../images/error-page-2.jpg') center;
+	background-size:cover;
+}
+
+.error-page-2-circle h2{
+	background:#4e73df;
+	border-radius:100%;
+	color:#000;
+	box-shadow:inset 0px 0px 20px rgba(0,0,0,0.2);
+	animation: example 4s linear infinite;
+}
+
+@keyframes example {
+    0%   {transform:rotateY(0deg);}
+    50%  {transform:rotateY(180deg);}
+	100%  {transform:rotateY(0deg);}
+}
+
+/********** COMING SOON PAGE ************/
+
+#coming-soon-text{
+	background:linear-gradient(rgba(0, 0, 0,0.56),rgba(0, 0, 0,0.56)),url('../images/coming-soon-page.jpg') bottom;
+	background-size:145%;
+	color:white;
+}
+
+#coming-soon-text .company-name span{
+	color:#4e73df;
+}
+
+#coming-soon-text p{
+	color:white;
+}
+
+#coming-soon-text form input{
+	border-radius:0px;
+	border:0px;
+}
+
+#coming-soon-text .input-group-btn .btn{
+	color:#000;
+}
+
+#coming-soon-text .input-group-btn .btn:hover{
+	color:#4e73df;
+}
+
+#coming-soon-text .timer li{
+	border:1px solid white;
+}
+
+/********** COMING SOON PAGE 2 ************/
+
+#coming-soon-page-2 .coming-soon-2-timer ul li .digit{
+	background:#4e73df;
+	border-radius:100%;
+	color:white;
+}
+
+#coming-soon-page-2-text form input{
+	border-radius:0px;
+}
+
+#coming-soon-page-2-text form .btn{
+	color:white;
+	background:#1e1e1e;
+}
+
+#coming-soon-page-2-text form .btn:hover{
+	background:#000;
+}
+
+/********* BLOG LISTINGS PAGE ***********/
+
+.blog-list:hover{
+	box-shadow:0px 0px 16px rgba(0,0,0,0.15);
+}
+
+.blog-post-img .main-mask{
+	background:rgba(0,0,0,0.6);
+}
+
+.blog-post-img .main-mask,
+.blog-post-img .main-mask .blog-post-info li a{
+	color:white;
+}
+
+.blog-post-img .main-mask .blog-post-info li .fa{
+	color:#4e73df;
+}
+
+.blog-post-detail{
+	border:1px solid #e6e7e8;
+	border-top:0px;
+}
+
+.blog-post-detail .blog-post-title,
+.blog-post-detail .blog-post-title a{
+	color:#000;
+}
+
+/********** BLOG DETAILS PAGE ***********/
+
+.comment-block .user-text ul .user-name:after{
+	background:#333;
+}
+
+.comment-block .user-text ul .date{
+	color:#9d9fa2;
+}
+
+.comment-block .user-text p{
+	color:#828486;
+}
+
+.comment-block .user-text a{
+	color:#c0c0c0;
+}
+
+#comment-form .innerpage-heading h1{
+	color:#464646;
+}
+
+#comment-form input,
+#comment-form textarea{
+	border-radius:0px;
+	border:1px solid #dcddde;
+	box-shadow:none;
+}
+
+#comment-form input:focus,
+#comment-form textarea:focus{
+	border-color:#555;
+}
+
+/************** DASHOBARD ***************/
+
+.page-cover.dashboard{
+	background:#1f1e19;
+}
+
+.dashboard-heading h2 span{
+	color:#4e73df;
+}
+
+.dashboard-heading p{
+	color:#999a9b;
+}
+
+.dashboard-nav .nav-tabs{
+	border-bottom:0px;
+}
+
+.dashboard-nav .nav-tabs li a{
+	background:#303030;
+	color:white;
+	border-radius:0px;
+	border:0px;
+}
+
+.dashboard-nav .nav-tabs li a:hover{
+	background:#4e73df;
+}
+
+.dashboard-nav .nav-tabs li.active a{
+	background:#4e73df;
+	color:white;
+	border-top: 4px solid #000;
+}
+
+.dashboard-nav .nav-tabs li.active a:hover{
+	border-left:0px;
+	border-right:0px;
+	border-bottom:0px;
+}
+
+.dashboard-nav .nav-tabs li .fa{
+	border:2px solid white;
+	color:white;
+	border-radius:100%;
+}
+
+.dash-content-title{
+	color:#303030;
+}
+
+.dashboard-content .btn{
+	color:#303030;
+	background-color: #D8D8D8FF;
+}
+
+.dashboard-content.my-cards .btn{
+	color:#303030;
+	background-color: unset;
+}
+
+.dashboard-content .btn:hover{
+	color:white;
+}
+
+.info-stat .stat-block{
+	border:2px solid #d8d8d8;
+	color:#303030;
+}
+
+.info-stat .stat-block .fa{
+	color:#4e73df;
+}
+
+.info-stat .stat-block p{
+	color:#999a9b;
+}
+
+.dashboard-listing{
+	border:1px solid #d8d8d8;
+}
+
+.dashboard-listing.recent-activity{
+	box-shadow:0px 0px 10px rgba(0,0,0,0.15);
+}
+
+.dashboard-listing table td.dash-list-icon .fa{
+	background:#afafaf;
+	border-radius:100%;
+}
+
+.dashboard-listing table tr:hover td.dash-list-btn .btn{
+	opacity:1;
+}
+
+.recent-activity td.recent-ac-text{`
+	color:#303030;
+}
+
+.recent-activity td.recent-ac-text span{
+	color:#4e73df;
+}
+
+.recent-activity td.del-field .btn{
+	color:red;
+	background:transparent;
+}
+
+.invoices td.invoice-text .invoice-info li{
+	color:#a2a2a2;
+}
+
+.invoices td.invoice-text .invoice-info li:after{
+	background:#a2a2a2;
+}
+
+.invoices td.invoice-text .invoice-info li.red{
+	color:#d40000;
+}
+
+.invoices td.invoice-text .invoice-info li.green{
+	color:#26b500;
+}
+
+@media(max-width:768px){
+	
+	.dashboard-listing .table-responsive{
+		border:0px;
+	}
+}
+
+/*************** DASHBOARD-2 *************/
+
+#dashboard-tabs .nav-tabs li a{
+	background:#f2f2f2;
+	color:white;
+	background:#666666;
+	border:0px;
+	border-radius:0px;
+	border-left:4px solid #8c8c8c;
+}
+
+#dashboard-tabs .nav-tabs li a .fa{
+	color:#303030;
+}
+
+#dashboard-tabs .nav-tabs li:hover a,
+#dashboard-tabs .nav-tabs li.active a{
+	background:#4e73df;
+	border-left-color:#303030;
+}
+
+#dashboard-tabs .nav-tabs .nav-link.active {
+	background:#4e73df;
+	border-left-color:#303030;
+}
+
+#dashboard-tabs .nav-tabs li.active a .fa{
+	background:#4e73df;
+}
+
+#dashboard-tabs .tab-content .tab-pane{
+	border:1px solid #e6e7e8;
+	border-top:0px;
+}
+
+/************** PROFILE PAGE **************/
+
+.user-profile{
+	border-radius:0px;
+}
+
+.user-profile .card-body .big-icon{
+	color:#f2f2f2;
+}
+
+.user-profile .card-body .user-detail .btn:hover{
+	background:#303030;
+}
+
+/************** BOOKING PAGE ************/
+
+.booking-listing td.booking-list-date .b-date{
+	background:#efefef;
+}
+
+.booking-listing tr:hover .booking-list-date .b-date{
+	background:white;
+}
+
+.booking-listing td.booking-list-date h3{
+	color:#4e73df;
+}
+
+.booking-listing td.booking-list-date p{
+	color:#8e8e8e;
+}
+
+.booking-listing td.booking-list-detail h3{
+	color:#494949;
+}
+
+.booking-listing td.booking-list-detail li{
+	color:#737373;
+}
+
+.booking-listing td.dash-list-btn .btn:nth-child(2){
+	background:#d1d1d1;
+}
+
+.booking-listing td.dash-list-btn .btn:nth-child(2):hover{
+	background:#303030;
+}
+
+.booking-trips .dash-listing-heading{
+	background:#efefef;
+}
+
+.booking-trips .dash-listing-heading input[type="radio"] + label {
+  	color:#7e7e7e;
+}
+
+.booking-trips .dash-listing-heading input[type="radio"]:checked + label{
+	color:#303030;
+}
+
+.booking-trips .dash-listing-heading input[type="radio"] + label span {
+	color:#646464;
+}
+
+.booking-trips .dash-listing-heading input[type="radio"] + label span {
+     background-color:#7e7e7e;
+}
+
+.booking-trips .dash-listing-heading input[type="radio"]:checked + label span{
+     background-color:#4e73df;
+}
+
+.booking-trips .dash-listing-heading input[type="radio"] + label span,
+.booking-trips .dash-listing-heading input[type="radio"]:checked + label span {
+  	transition:background-color .2s linear;
+}
+
+/************* WISHLIST PAGE ************/
+
+.wishlist td.wishlist-text .order{
+	color:#303030;
+}
+
+.wishlist table tr td{
+	border:0px;
+}
+
+.wishlist tr:hover{
+	background:#f6f6f6;
+}
+
+@media(min-width:768px){
+	
+	.wishlist tr{
+		border:1px solid #ddd;
+	}	
+
+}
+
+@media(max-width:767px){
+	
+	.wishlist tr{
+		border-bottom:1px solid #ddd;
+	}	
+}
+
+/************** CARD PAGE **************/
+
+.card-block{
+	border:1px solid #d8d8d8;
+	color:#303030;
+}
+
+.card-block:hover{
+	background:#efefef;
+}
+
+.card-block .primary-tag{
+	background:#4e73df;
+	color:white;
+	border-radius:0px 0px 0px 17px;
+}
+
+.card-block ul li.card-links .btn{
+	color:#303030;
+	background:transparent;
+	box-shadow:none;
+}
+
+.card-block ul li .fa-pencil{
+	color:#4e73df;
+}
+
+.card-block.add-card:hover{
+	background:#4e73df;
+	border-color:#4e73df;
+}
+
+.card-block.add-card:hover .fa,
+.card-block.add-card:hover h4{
+	color:white;
+}
+
+.card-block.add-card .fa,
+.card-block.add-card h4{
+	color:#4e73df;
+}
+
+.custom-modal .modal-content:after{
+	background:#4e73df;
+}
+
+.custom-modal .modal-content{
+	border-top:8px solid #4e73df;
+}
+
+.custom-modal .modal-content .modal-header{
+	border:0px;
+}
+
+.custom-modal .modal-content,
+.custom-modal .modal-body  input{
+	border-radius:0px;
+}
+
+.custom-modal .modal-body  input{
+	box-shadow:none;
+	background:#f2f2f2;
+	border:0px;
+}
+
+.custom-modal .modal-body .custom-check label{
+	color:#595959;
+}
+
+/********* BEFORE YOU FLY PAGE **********/
+
+.byf-info .nav-tabs li a{
+	background:#4d4d4d;
+	color:white;
+	border:0px;
+	border-radius:8px 8px 0px 0px;
+}
+
+.byf-info .nav-tabs li:hover a,
+.byf-info .nav-tabs li.active a{
+	background:#4e73df;
+	border:0px;
+	color:white;
+}
+
+.byf-info .tab-pane{
+	border:1px solid #ddd;
+	border-top:0px;
+}
+
+.byf-info .tab-pane ul li{
+	color:#808285;
+}
+
+@media(max-width:767px){
+	
+	.byf-info .nav-tabs li{
+		border-top:1px solid rgba(255,255,255,0.1);
+	}
+	
+	.byf-info .nav-tabs li a{
+		border-radius:0px;
+	}
+}
+
+/********* TRAVEL INSURANCE PAGE *********/
+
+.tvl-insurance-info .innerpage-heading h1{
+	border-left:6px solid #4e73df;
+}
+
+.tvl-insurance-info .innerpage-heading + ul{
+	color:#808285;
+}
+
+.insurance-desc .innerpage-heading + ul li:before{
+	color:#4e73df;
+}
+
+.in-feature-block h4{
+	color:#231f20;
+}
+
+.in-feature-block .fa{
+	border-radius:100%;
+	background:#4e73df;
+	color:white;
+}
+
+.in-feature-block .fa::after{
+	border:8px solid rgba(255,255,255,0.2);
+	border-radius:100%;
+}
+
+.in-feature-block:hover .fa{
+	transform:rotate(360deg);
+	box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/************* HOLIDAYS PAGE *************/
+
+#holiday-trips .owl-holidays .tour-info{
+	background:#f8f8f8;
+}
+
+#popular-destinations{
+	background:#f2f2f2;
+}
+
+.big-heading h2{
+	color:#333;
+	text-shadow:8px 0px 10px rgba(0,0,0,0.5);
+	animation: color 7s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#popular-destinations li:before{
+	color:#4e73df;	
+}
+
+#popular-destinations li a{
+	color:#404040;
+}
+
+#popular-destinations li a:hover{
+	color:#4e73df;
+}
+
+@keyframes color {
+	0% {text-shadow:-8px 0px 10px rgba(0,0,0,0.5);}
+	25% {color:#4e73df; text-shadow:8px 0px 10px rgba(0,0,0,0.5);}
+	50%	{text-shadow:-8px 0px 10px rgba(0,0,0,0.5);}
+	75% {color:#4e73df; text-shadow:8px 0px 10px rgba(0,0,0,0.5);}
+	100% { text-shadow:-8px 0px 10px rgba(0,0,0,0.5);}
+}
+
+/************ THNAK YOU PAGE *************/
+
+.thank-you-note{
+	border-bottom:1px solid #e6e6e6;
+}
+
+.thank-you-note:before{
+	color:lightgrey;	
+	animation: thumbs-up 3s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.thank-you-note .btn{
+	border-radius:30px;
+}
+
+.t-info-heading{
+	color:#1a1a1a;
+}
+
+.t-info-heading span{
+	color:#4e73df;
+	border-bottom:4px solid #4e73df;
+}
+
+.traveler-info table tr td{
+	border-top:0px;
+	border-bottom:1px solid #f2f2f2;
+}
+
+.traveler-info table tr td:first-child{
+	color:grey;
+}
+
+.payment-method ul li{
+	opacity:0.2;
+}
+
+.payment-method ul li.active{
+	opacity:1;
+}
+
+@keyframes thumbs-up {
+	0%{color:lightgrey;}
+	50%{color:#4e73df;}
+	100%{color:lightgrey;}
+}
+
+/********** PAYMENT-SUCCESS PAGE *********/
+
+#payment-success{
+	background:linear-gradient(rgba(255, 255, 255,0.9),rgba(255, 255, 255,0.9)),url('../images/coming-soon-page.jpg') center center;
+	background-size:cover;
+}
+
+#payment-success table td .fa{
+	color:#51a351;
+}
+
+#payment-success .fa-check-circle{
+	color:#51a351;
+	animation: check-circle 3s linear infinite;
+}
+
+#payment-success table td .t-date{
+	color:grey;
+}
+
+@keyframes check-circle{
+	0%   {transform:rotateY(0deg);}
+    50%  {transform:rotateY(180deg);}
+	100%  {transform:rotateY(0deg);}
+}
+
+/************* SERVICES-1 PAGE *************/
+
+.service-block-1 .service-icon-1 .fa{
+	border:1px solid #4e73df;
+	color:#4e73df;
+	border-radius:100%;
+}
+
+.service-block-1:hover .service-icon-1 .fa{
+	transform:rotateY(-180deg);
+	background:#4e73df;
+	color:white;
+}
+
+/************* SERVICES-2 PAGE ************/
+
+#process-flow{
+	background:#eeeeee;	
+}
+
+.process-block{
+	color:#333;
+}
+
+.process li::before,
+.process li::after{
+	border-top:1px dashed #4e73df;
+	color:#4e73df;
+}
+
+.process-block .fa{
+	background:white;
+	color:#4e73df;
+	border-radius:100%;
+	border:3px dashed #4e73df;
+}
+
+.process-block:hover .fa{
+	background:#4e73df;
+	color:white;
+	transform:rotate(360deg);
+}
+
+.service-intro-text h4{
+	color:#4e73df;
+}
+
+@media(max-width:576px){
+	
+	.process li::before,
+	.process li::after{
+		display:none;
+	}
+}
+
+/************** TEAM-2 PAGE **************/
+
+.member-block-2:hover{
+	box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+	transform:translateY(-10px);
+}
+
+.member-img-2 img{
+	border-bottom:2px solid #4e73df;
+}
+
+.member-name-2 h3{
+	background:#4e73df;
+	color:white;
+}
+
+.member-info-2{
+	border:1px solid #e6e7e8;	
+}
+
+.member-info-2 h4{
+	color:#595959;
+}
+
+/************* PRICING PAGES *************/
+
+#pricing-table-page{
+	background:#eeeeee;
+}
+
+/**************** FAQ PAGES **************/
+
+#faq-page .content-side .faq-heading::before,
+#faq-page .content-side .card-title::after{
+	background:#4e73df;	
+}
+
+#faq-page .content-side .card{
+	box-shadow:none;
+}
+
+#faq-page .content-side .card-header{
+	border-bottom:0px;
+}
+
+#faq-page .content-side .card-title{
+	color:#4d4d4d;
+}
+
+#faq-page .content-side .card-title::before{
+	color:white;
+}
+
+#faq-page .side-bar .booking-form-block{
+	background:#333;
+}
+
+#faq-page .side-bar .booking-form-block h3{
+	color:white;
+}
+
+#faq-page .side-bar .booking-form-block p{
+	color:lightgrey;
+}
+
+#faq-page .side-bar .booking-form-block input,
+#faq-page .side-bar .booking-form-block textarea{
+	background:white;
+	color:#333;
+}
+
+/*************** TRAVEL-GUIDE *************/
+
+#travel-guide .detail-tabs .nav-tabs li a{
+	background:#4d4d4d;
+	bottom: 0;
+	color: white;
+}
+
+
+
+#travel-guide .detail-tabs .tab-pane{
+	background:white;
+}
+
+#travel-guide .detail-tabs .nav-tabs li.active a{
+	border-top:4px solid #000;
+	background-color:#4e73df;
+	color:#000;
+	margin: -4px 0 0 0;
+}
+
+#travel-guide .detail-tabs .nav-tabs .nav-link.active{
+	border-top:4px solid #000;
+	background-color:#4e73df;
+	color:#000;
+	margin: -4px 0 0 0;
+}
+
+#travel-guide .tab-content .tab-pane{
+	border:0px;	
+	border-bottom:3px solid #4d4d4d;
+}
+
+#travel-guide .detail-tabs img{
+	border:0px;
+}
+
+#travel-guide .tab-text table td{
+	border-top-color:#ebebeb;
+}
+
+#travel-guide .tab-text table tr:last-child{
+	border-bottom:1px solid #eeeeee;
+}
+
+#travel-guide .tab-text table tbody td{
+	color:#737373;
+}
+
+#travel-guide .tab-text table tbody td:first-child{
+	color:#333;
+}
+
+#travel-guide #tv-guide-attractions .item{
+	border:1px solid #e6e7e8;
+}
+
+#travel-guide #tv-guide-attractions a,
+#travel-guide .tv-guide-block .tab-text h3 a{
+	color:#333;
+}
+
+#travel-guide .attract-loc span{
+	color:#4e73df;
+}
+
+#travel-guide #tv-guide-attractions .owl-buttons div{
+	background:none;
+	opacity:1;
+	color:#333;
+}
+
+#travel-guide .tv-guide-block{
+	border-bottom:1px dashed #ddd;
+}
+
+#travel-guide .tv-guide-block:last-child{
+	border-bottom:0px;
+}
+
+/* -----------------------------------------------------
+		Contact Us
+   ----------------------------------------------------- */
+
+.contact-block-2{
+	box-shadow:0px 0px 20px rgba(0,0,0,0.2);	
+}
+
+.contact-block-2 .fa{
+	color:#4e73df;
+}
+
+.contact-block-2 h4{
+	color:#111;
+}
+
+#contact-form-2 .social-links li a{
+	color:#b3b3b3;	
+}
+
+#contact-form-2 .social-links li a:hover{
+	color:#4e73df;	
+}
+
+#contact-form-2 form input,
+#contact-form-2 textarea{
+	border-radius:0px;
+	box-shadow:none;
+	background:#f2f2f2;
+	border:0px;
+}

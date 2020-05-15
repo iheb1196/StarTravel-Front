@@ -1,0 +1,118 @@
+<div class="container-fluid">
+    <div class="row my-3">
+        <div class="col-6">
+            <h3>Users</h3>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-primary pull-right mx-2" data-toggle="modal" (click)="userForm.reset(); selectedUser = null"
+                data-target="#exampleModal">Add User</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mb-4">
+            <!-- Approach -->
+            <div class="card shadow mb-4">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">First name</th>
+                            <th scope="col">Last name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Role</th>
+                          
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let user of users">
+                            <th scope="row">{{user._id}}</th>
+                            <td>{{user.firstname}}</td>
+                            <td>{{user.lastname}}</td>
+                            <td>{{user.email}}</td>
+                            <td>{{user.role}}</td>
+                            
+                            <td>
+                                <div class="pull-right">
+                                    <button class="btn btn-primary btn-sm mx-2" data-toggle="modal"
+                                        data-target="#exampleModal" (click)="selectedUser = user ; selectUser()">
+                                        <span class="fas fa-fw fa-edit"></span>
+                                    </button>
+                                    <button class="btn btn-danger btn-sm mx-2"
+                                        (click)="selectedUser = user ; deleteUser()">
+                                        <span class="fas fa-fw fa-trash"></span>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Client</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="userForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">First name</label>
+                            <input type="text" class="form-control" formControlName="firstname"
+                                placeholder="First name">
+                        </div>
+                         
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Last name</label>
+                            <input type="text" class="form-control" formControlName="lastname" placeholder="Last name">
+                        </div>
+                        
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" formControlName="email" id="inputEmail4"
+                                placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" formControlName="password" id="inputPassword4"
+                                placeholder="Password" autocomplete="off">
+                        </div>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label for="inputAddress">Role</label>
+                        <select class="custom-select my-1 mr-sm-2" formControlName="role"
+                            id="inlineFormCustomSelectPref">
+                            <option selected>Choose...</option>
+                            <option value="admin">Admin</option>
+                            <option value="client">Client</option>
+                        </select>
+                        
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="addClient()" *ngIf="!selectedUser?._id">
+                    Save changes
+                </button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="editClient()" *ngIf="selectedUser?._id">
+                    Edit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

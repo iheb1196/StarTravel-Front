@@ -1,0 +1,118 @@
+<app-navbar></app-navbar>
+
+<section class="page-cover dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-title text-white">My Account</h1>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item">My Account</li>
+                </ul>
+            </div><!-- end columns -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section>
+
+<section class="innerpage-wrapper">
+    <div id="dashboard" class="innerpage-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="dashboard-heading">
+                        <h2>Travel <span>Profile</span></h2>
+                        <p>Hi {{authService.currentUser.firstname}}, Welcome to Star Travels!</p>
+                        <p>All your trips booked with us will appear here and you'll be able to manage everything!</p>
+                    </div><!-- end dashboard-heading -->
+
+
+                    <div id="dashboard-tabs">
+                        <ul class="nav nav-tabs nav-justified ">
+                            
+                            <li class="nav-item"><a class="nav-link" href="#dsh-profile" data-toggle="tab"><span><i
+                                            class="fa fa-user"></i></span>Profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#dsh-booking" data-toggle="tab"><span><i
+                                            class="fa fa-briefcase"></i></span>Booking</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                           
+
+                            <div id="dsh-profile" class="tab-pane">
+                                <div class="dashboard-content user-profile">
+                                    <h2 class="dash-content-title">My Profile</h2>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4>Profile Details</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                
+
+                                                <div class="col-md-7 col-lg-8  user-detail">
+                                                    <ul class="list-unstyled">
+                                                        <li><span>Full Name :</span>{{authService.currentUser.firstname}},{{authService.currentUser.lastname}}</li>
+                                                        
+                                                        <li><span>Email:</span>{{authService.currentUser.email}} </li>
+                                                        
+                                                        <li><span>Phone:</span> {{authService.currentUser.phonenumber}}</li>
+                                                        <li><span>Address:</span> {{authService.currentUser.adress}}
+                                                        </li>
+                                                        <li><span>Country:</span> {{authService.currentUser.country}}</li>
+                                                    </ul>
+                                                    <button class="btn mt-4" data-toggle="modal"
+                                                        data-target="#edit-profile">Edit Profile</button>
+                                                </div><!-- end columns -->
+                                            </div><!-- end row -->
+
+                                        </div><!-- end card-body -->
+                                    </div><!-- end panel-detault -->
+                                </div><!-- end dashboard-content -->
+                            </div><!-- end dsh-profile -->
+
+                            <div id="dsh-booking" class="tab-pane fade">
+                                <div class="dashboard-content booking-trips">
+                                    <h2 class="dash-content-title">Trips You have Booked!</h2>
+                                    <div class="dashboard-listing booking-listing">
+
+                                        <div class="table-responsive">
+                                            <table class="table table-hover">
+                                                <tbody>
+                                                    <tr *ngFor="let booking of bookings">
+                                                        <td class="dash-list-icon booking-list-date">
+                                                            <div class="b-date">
+                                                                <h3>{{getDate(booking.flight.date)}}</h3>
+                                                                <p>{{getMonth(booking.flight.date)}}</p>
+                                                            </div>
+                                                        </td>
+                                                        <td class="dash-list-text booking-list-detail">
+                                                            <h3>{{booking.flight.dep.country}} >>>
+                                                                {{booking.flight.arr.country}}</h3>
+                                                            <ul class="list-unstyled booking-info">
+                                                                <li><span>Booking Date:</span> {{booking.dateCreation | date:'long'}}
+                                                                </li>
+                                                                <li><span>Booking Details:</span>
+                                                                    {{booking.numberOfPassangers}} People</li>
+                                                                <li><span>Status:</span>
+                                                                    {{booking.status}}
+                                                            </ul>
+
+                                                        </td>
+                                                        <td class="dash-list-btn"><button
+                                                                class="btn btn-orange">Cancel</button><button
+                                                                class="btn">Approve</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div><!-- end table-responsive -->
+                                    </div><!-- end booking-listings -->
+                                </div><!-- end dashboard-content -->
+                            </div><!-- end dsh-booking -->>
+
+                        </div><!-- end tab-content -->
+                    </div><!-- end dashboard-tabs -->
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end contact-us -->
+</section>

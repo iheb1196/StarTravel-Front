@@ -1,0 +1,116 @@
+<div class="wrapper">
+    <app-navbar></app-navbar>
+
+    <!--============= PAGE-COVER =============-->
+    <section class="page-cover" id="cover-login">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-title text-white">Login</h1>
+                    <ul class="breadcrumb">
+                        <!-- <li class="breadcrumb-item"><a href="#">Home</a></li> -->
+                        <!-- <li class="breadcrumb-item">Login 1</li> -->
+                    </ul>
+                </div><!-- end columns -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end page-cover -->
+
+
+    <!--===== INNERPAGE-WRAPPER ====-->
+    <section class="innerpage-wrapper">
+        <div id="login" class="innerpage-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="flex-content">
+                            <div class="custom-form custom-form-fields">
+                                <h3>Login</h3>
+                                
+                                <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email" required formControlName="email" />
+                                        <span><i class="fa fa-user"></i></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password" required formControlName="password" />
+                                        <span><i class="fa fa-lock"></i></span>
+                                    </div>
+
+                                    
+
+                                    <button class="btn btn-orange btn-block">Login</button>
+                                </form>
+
+                                <div class="other-links">
+                                    <p class="link-line" >New Here ? <a routerLink="/signup"> Signup</a></p>
+                                    
+                                </div><!-- end other-links -->
+                            </div><!-- end custom-form -->
+
+                            <div class="flex-content-img custom-form-img">
+                                <img src="assets/images/login.jpg" class="img-fluid" alt="registration-img" />
+                            </div><!-- end custom-form-img -->
+                        </div><!-- end form-content -->
+
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end login -->
+    </section><!-- end innerpage-wrapper -->
+
+
+    <!--======================= FOOTER =======================-->
+    <section id="footer" class="ftr-heading-o ftr-heading-mgn-1">
+
+        <div id="footer-top" class="banner-padding ftr-top-black ftr-text-white">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-3 footer-widget ftr-contact">
+                        <h3 class="footer-heading">CONTACT US</h3>
+                        <ul class="list-unstyled">
+                            <li><span><i class="fa fa-map-marker"></i></span>29 Immeuble B, Lac 2, Tunis</li>
+                            <li><span><i class="fa fa-phone"></i></span>+216 24 297 446</li>
+                            <li><span><i class="fa fa-envelope"></i></span>info@StarTravel.com</li>
+                        </ul>
+                    </div><!-- end columns -->
+
+                    
+
+                    
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 footer-widget ftr-about">
+                        <h3 class="footer-heading">ABOUT US</h3>
+                        <p>StarTravel is a booking website developed by Junior Software Engineering Student 
+                            for a school project to our unversity Medtech-SMU</p>
+                        
+                        
+                    </div><!-- end columns -->
+
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end footer-top -->
+
+        <div id="footer-bottom" class="ftr-bot-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="copyright">
+                        <p>© 20 <a href="#">StarTravel</a>. All rights reserved.</p>
+                    </div><!-- end columns -->
+
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="terms">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"><a href="#">Terms & Condition</a></li>
+                            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end footer-bottom -->
+
+    </section><!-- end footer -->
+</div>

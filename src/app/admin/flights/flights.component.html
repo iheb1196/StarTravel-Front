@@ -1,0 +1,144 @@
+<div class="container-fluid">
+    <div class="row my-3">
+        <div class="col-6">
+            <h3>Flights</h3>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-primary pull-right mx-2" data-toggle="modal" (click)="flightForm.reset(); selectedFlight = null"
+                data-target="#exampleModal">
+                Add Flight
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mb-4">
+            <!-- Approach -->
+            <div class="card shadow mb-4">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Dep</th>
+                            <th scope="col">Arr</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let flight of flights">
+                            <th scope="row">{{flight._id}}</th>
+                            <td>{{flight.dep.name}}</td>
+                            <td>{{flight.arr.name}}</td>
+                            <td>{{flight.price}}</td>
+                            <td>{{flight.duration}}</td>
+                            <td>{{flight.date}}</td>
+                            <td>{{flight.time}}</td>
+                            <td>
+                                <div class="pull-right">
+                                    <button class="btn btn-primary btn-sm mx-2" data-toggle="modal"
+                                        data-target="#exampleModal" (click)="selectedFlight = flight; selectFlight()">
+                                        <span class="fas fa-fw fa-edit"></span>
+                                    </button>
+                                    <button class="btn btn-danger btn-sm mx-2"
+                                        (click)="selectedFlight = flight ; deleteFlight()">
+                                        <span class="fas fa-fw fa-trash"></span>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Flight</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="flightForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Dep</label>
+                            <!-- <input type="text" class="form-control" formControlName="dep" placeholder="Dep"> -->
+                            <select class="custom-select my-1 mr-sm-2" formControlName="dep"
+                                id="inlineFormCustomSelectPref">
+                                <option [value]="airport._id" *ngFor="let airport of airports">
+                                    {{airport.name + ' ' + airport.country}}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Arr</label>
+                            <!-- <input type="text" class="form-control" formControlName="arr" placeholder="Arr"> -->
+                            <select class="custom-select my-1 mr-sm-2" formControlName="arr"
+                                id="inlineFormCustomSelectPref">
+                                <option [value]="airport._id" *ngFor="let airport of airports">
+                                    {{airport.name + ' ' + airport.country}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Price</label>
+                            <input type="number" class="form-control" formControlName="price" placeholder="Price">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Duration</label>
+                            <input type="number" class="form-control" formControlName="duration" placeholder="Duration">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Company Name</label>
+                            <input type="text" class="form-control" formControlName="companyName" placeholder="Company Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Company Logo</label>
+                            <input type="text" class="form-control" formControlName="companyLogo" placeholder="Company Logo">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Date</label>
+                            <input type="date" class="form-control" formControlName="date" placeholder="Date">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Time</label>
+                            <input type="time" class="form-control" formControlName="time" placeholder="Time">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="add()"
+                    *ngIf="!selectedFlight?._id">
+                    Save changes
+                </button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="edit()"
+                    *ngIf="selectedFlight?._id">
+                    Edit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

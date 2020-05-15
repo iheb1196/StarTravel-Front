@@ -1,0 +1,329 @@
+<div id="falight-homepage">
+
+    <div class="wrapper">
+
+        <app-navbar></app-navbar>
+        <!--========================= FLEX SLIDER =====================-->
+        <section class="flexslider-container" id="flexslider-container-2">
+
+            <div class="flexslider slider" id="slider-2">
+                <ul class="slides">
+
+                    <li class="item-1 back-size"
+                        style="background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(assets/images/flight-slider-1.jpg) 50% 15%; background-size:cover;    height:100%;">
+                        <div class="meta">
+                            <div class="container">
+                                <h2 class="text-white">Best Flight Offers</h2>
+                                <p>StarTravel is working on a global scale , through it's different 
+                                    stakeholders all around the world.</p>-
+                                
+                            </div><!-- end container -->
+                        </div><!-- end meta -->
+                    </li><!-- end item-1 -->
+
+                    <li class="item-2 back-size"
+                        style="background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(assets/images/flight-slider-2.jpg) 50% 15%; background-size:cover;    height:100%;">
+                        <div class=" meta">
+                            <div class="container">
+                                <h2 class="text-white">StarTravel is Global</h2>
+                                <p>We provide flight offers to all the touristic places with best prices.</p>
+                            </div><!-- end container -->
+                        </div><!-- end meta -->
+                    </li><!-- end item-2 -->
+
+                   
+
+                </ul>
+            </div><!-- end slider -->
+
+            <div class="search-tabs" id="search-tabs-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+
+                            <div class="tab-content">
+
+                                <div id="flights" class="tab-pane in active">
+                                    <form>
+                                        <div class="row">
+
+                                            <div class="col-12 col-md-12 col-lg-5 col-xl-6">
+                                                <div class="row">
+
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <div class="form-group right-icon">
+                                                            <select class="form-control" #dep>
+                                                                <option selected="" disabled>Dep</option>
+                                                                <option [value]="airport._id"
+                                                                    *ngFor="let airport of airports">
+                                                                    {{airport.name + ' ' + airport.country}}
+                                                                </option>
+                                                            </select>
+                                                            <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+
+                                                    <div class="col-12 col-md-6 col-lg-6">
+                                                        <div class="form-group right-icon">
+                                                            <select class="form-control" #arr>
+                                                                <option selected="" disabled>Arr</option>
+                                                                <option [value]="airport._id"
+                                                                    *ngFor="let airport of airports">
+                                                                    {{airport.name + ' ' + airport.country}}
+                                                                </option>
+                                                            </select> <i class="fa fa-map-marker"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+
+                                                </div><!-- end row -->
+                                            </div><!-- end columns -->
+
+                                            <div class="col-12 col-md-12 col-lg-5 col-xl-4">
+                                                <div class="row">
+
+                                                    <div class="col-6 col-md-6 col-lg-12">
+                                                        <div class="form-group left-icon">
+                                                            <input type="date" class="form-control dpd1" #checkin
+                                                                placeholder="Check In">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                    </div><!-- end columns -->
+
+
+
+                                                </div><!-- end row -->
+                                            </div><!-- end columns -->
+
+
+
+                                            <div class="col-12 col-md-12 col-lg-12 col-xl-2 search-btn">
+                                                <button class="btn btn-orange"
+                                                    (click)="search(dep.value, arr.value, checkin.value)">Search</button>
+                                            </div><!-- end columns -->
+
+                                        </div><!-- end row -->
+                                    </form>
+                                </div><!-- end flights -->
+                            </div><!-- end tab-content -->
+
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end search-tabs -->
+
+        </section><!-- end flexslider-container -->
+        <!--================= FLIGHT OFFERS =============-->
+        <section id="flight-offers" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-heading">
+                            <h2>Flight Offers</h2>
+                            <hr class="heading-line" />
+                        </div><!-- end page-heading -->
+
+                        <div class="row">
+
+                            <div class="col-md-6 col-lg-4" *ngFor="let flight of flights">
+                                <div class="main-block flight-block">
+                                    <a routerLink="/flight/{{flight._id}}">
+                                        
+
+                                        <div class="flight-info">
+                                            <div class="flight-title">
+                                                <h3><span class="flight-destination">{{flight.dep.name}}>>>{{flight.arr.name}}</span></h3>
+                                            </div><!-- end flight-title -->
+
+                                            <div class=" flight-timing">
+                                                <ul class="list-unstyled">
+                                                    <li><span><i class="fa fa-plane"></i></span><span class="date">
+                                                            {{flight.date}} </span>({{flight.time}})</li>
+                                                    <li><span><i class="fa fa-plane"></i></span><span class="date">
+                                                            {{flight.date}} </span>({{flight.time}})</li>
+                                                </ul>
+                                            </div><!-- end flight-timing -->
+
+                                            <ul class="list-unstyled list-inline offer-price-1">
+                                                <li class="list-inline-item price">${{flight.price}}<span
+                                                        class="pkg">Avg/Person</span></li>
+                                                <li class="list-inline-item rating">
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star orange"></i></span>
+                                                    <span><i class="fa fa-star lightgrey"></i></span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end flight-info -->
+                                    </a>
+                                </div><!-- end flight-block -->
+                            </div><!-- end columns -->
+                        </div><!-- end row -->
+
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end flight-offers -->
+
+
+
+        <!--========================= BEST FEATURES =======================-->
+        <section id="best-features" class="banner-padding lightgrey-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="b-feature-block">
+                            <span><i class="fa fa-dollar"></i></span>
+                            <h3>Best Price Guarantee</h3>
+                            
+                        </div><!-- end b-feature-block -->
+                    </div><!-- end columns -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="b-feature-block">
+                            <span><i class="fa fa-lock"></i></span>
+                            <h3>Safe and Secure</h3>
+                            
+                        </div><!-- end b-feature-block -->
+                    </div><!-- end columns -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="b-feature-block">
+                            <span><i class="fa fa-thumbs-up"></i></span>
+                            <h3>Best Travel Agents</h3>
+                            
+                        </div><!-- end b-feature-block -->
+                    </div><!-- end columns -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="b-feature-block">
+                            <span><i class="fa fa-bars"></i></span>
+                            <h3>Travel Guidelines</h3>
+                            
+                        </div><!-- end b-feature-block -->
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end best-features -->
+
+
+        <!--=============== TESTIMONIALS ===============-->
+        <section id="testimonials" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-heading white-heading">
+                            <h2>Testimonials</h2>
+                            <hr class="heading-line" />
+                        </div><!-- end page-heading -->
+
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                            <div class="carousel-inner text-center">
+
+                                <div class="carousel-item active">
+                                    <blockquote>Thanks to StarTravel , my flight booking is easier</blockquote>
+                                    <div class="rating">
+                                        <span><i class="fa fa-star orange"></i></span>
+                                        <span><i class="fa fa-star orange"></i></span>
+                                        <span><i class="fa fa-star orange"></i></span>
+                                        <span><i class="fa fa-star orange"></i></span>
+                                        <span><i class="fa fa-star lightgrey"></i></span>
+                                    </div><!-- end rating -->
+
+                                    <small>Jhon Smith</small>
+                                </div><!-- end item -->
+
+                                <div class="carousel-item">
+                                    <blockquote>StarTravel made me save my money because it offers the best flight offers 
+                                        with the least prices
+                                    </blockquote>
+                                    <div class="rating">
+                                        <span><i class="fa fa-star orange"></i></span>
+                                        <span><i class="fa fa-star orange"></i></span>
+                                        <span><i class="fa fa-star orange"></i></span>
+                                        <span><i class="fa fa-star orange"></i></span>
+                                        <span><i class="fa fa-star lightgrey"></i></span>
+                                    </div><!-- end rating -->
+
+                                    <small>Damien Cruz</small>
+                                </div><!-- end item -->
+
+                                <div class="carousel-item">
+                                    <blockquote>StarTravel is the best booking website that i ever used</blockquote>
+                                    <div class="rating">
+                                        <span><i class="fa fa-star orange"></i></span>
+                                        <span><i class="fa fa-star orange"></i></span>
+                                        <span><i class="fa fa-star orange"></i></span>
+                                        <span><i class="fa fa-star orange"></i></span>
+                                        <span><i class="fa fa-star lightgrey"></i></span>
+                                    </div><!-- end rating -->
+
+                                    <small>Sandra Smith</small>
+                                </div><!-- end item -->
+
+                            </div><!-- end carousel-inner -->
+
+                            <ol class="carousel-indicators mx-auto">
+                                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img
+                                        src="assets/images/client-1.jpg" class="img-fluid d-block" alt="client-img">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="1"><img
+                                        src="assets/images/client-2.jpg" class="img-fluid d-block" alt="client-img">
+                                </li>
+                                <li data-target="#quote-carousel" data-slide-to="2"><img
+                                        src="assets/images/client-3.jpg" class="img-fluid d-block" alt="client-img">
+                                </li>
+                            </ol>
+
+                        </div><!-- end quote-carousel -->
+                    </div><!-- end columns -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end testimonials -->
+
+
+       
+
+
+        <!--======================= FOOTER =======================-->
+        <section id="footer" class="ftr-heading-w ftr-heading-mgn-2">
+
+            
+
+                    
+
+            <div id="footer-bottom" class="ftr-bot-black">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="copyright">
+                            <p>© 2020 <a href="#">StarTravel</a>. All rights reserved.</p>
+                        </div><!-- end columns -->
+
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6" id="terms">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item"><a href="#">Terms & Condition</a></li>
+                                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div><!-- end columns -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end footer-bottom -->
+
+        </section><!-- end footer -->
+    </div>
+
+
+    <!-- Page Scripts Starts -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/bootstrap-4.4.1.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/custom-navigation.js"></script>
+    <script src="js/custom-flex.js"></script>
+    <script src="js/custom-date-picker.js"></script>
+    <!-- Page Scripts Ends -->
+
+</div>

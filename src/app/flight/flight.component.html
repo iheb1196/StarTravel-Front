@@ -1,0 +1,231 @@
+<app-navbar></app-navbar>
+<section class="innerpage-wrapper">
+    <div id="flight-details" class="innerpage-section-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-12 col-lg-9 col-xl-9 content-side">
+
+                    <div class="detail-slider">
+                        <div class="feature-slider">
+                            <!-- <div><img src="assets/images/f-feature-1.jpg" class="img-fluid" alt="feature-img" /></div>
+                            <div><img src="assets/images/f-feature-2.jpg" class="img-fluid" alt="feature-img" /></div>
+                            <div><img src="assets/images/f-feature-3.jpg" class="img-fluid" alt="feature-img" /></div>
+                            <div><img src="assets/images/f-feature-4.jpg" class="img-fluid" alt="feature-img" /></div> -->
+                            <div><img src="assets/images/f-feature-1.jpg" class="img-fluid" alt="feature-img" /></div>
+                        </div><!-- end feature-slider -->
+
+                        <!-- end feature-slider-nav -->
+
+                        <ul class="list-unstyled features flight-features">
+                            <li>
+                                <div class="f-icon"><i class="fa fa-plane"></i></div>
+                                <div class="f-text">
+                                    <p class="f-heading">From</p>
+                                    <p class="f-data">{{flight?.dep?.country}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="f-icon"><i class="fa fa-plane"></i></div>
+                                <div class="f-text">
+                                    <p class="f-heading">To</p>
+                                    <p class="f-data">{{flight?.arr?.country}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="f-icon"><i class="fa fa-clock-o"></i></div>
+                                <div class="f-text">
+                                    <p class="f-heading">Total Time</p>
+                                    <p class="f-data">{{flight?.duration}} hrs</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- end detail-slider -->
+
+                    <div class="detail-tabs">
+                        <ul class="nav nav-tabs nav-justified">
+                            <li class="nav-item active"><a class="nav-link" href="#flight-info" data-toggle="tab">Flight
+                                    Information</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#entertainment"
+                                    data-toggle="tab">Entertainment</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#connectivity"
+                                    data-toggle="tab">Connectivity</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#fare" data-toggle="tab">Fare</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#baggage" data-toggle="tab">Baggage</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+
+                            <div id="flight-info" class="tab-pane in active">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 tab-img">
+                                        <img src="assets/images/flight-detail-tab-1.jpg" class="img-fluid"
+                                            alt="flight-detail-img" />
+                                    </div><!-- end columns -->
+
+                                    <div class="col-md-8 col-lg-8 tab-text">
+                                        <h3>Flight Information</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div><!-- end columns -->
+                                </div><!-- end row -->
+                            </div><!-- end flight-info -->
+
+                            <div id="entertainment" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 tab-img">
+                                        <img src="images/flight-detail-tab-2.jpg" class="img-fluid"
+                                            alt="flight-detail-img" />
+                                    </div><!-- end columns -->
+
+                                    <div class="col-md-8 col-lg-8 tab-text">
+                                        <h3>Entertainment</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                                    </div><!-- end columns -->
+                                </div><!-- end row -->
+                            </div><!-- end entertainment -->
+
+                            <div id="connectivity" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 tab-img">
+                                        <img src="images/flight-detail-tab-3.jpg" class="img-fluid"
+                                            alt="flight-detail-img" />
+                                    </div><!-- end columns -->
+
+                                    <div class="col-md-8 col-lg-8 tab-text">
+                                        <h3>Connectivity</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation.<br /> Ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div><!-- end columns -->
+                                </div><!-- end row -->
+                            </div><!-- end connectivity -->
+
+                            <div id="fare" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 tab-img">
+                                        <img src="images/flight-detail-tab-4.jpg" class="img-fluid"
+                                            alt="flight-detail-img" />
+                                    </div><!-- end columns -->
+
+                                    <div class="col-md-8 col-lg-8 tab-text">
+                                        <h3>Fare</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div><!-- end columns -->
+                                </div><!-- end row -->
+                            </div><!-- end fare -->
+
+                            <div id="baggage" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 tab-img">
+                                        <img src="images/flight-detail-tab-5.jpg" class="img-fluid"
+                                            alt="flight-detail-img" />
+                                    </div><!-- end columns -->
+
+                                    <div class="col-md-8 col-lg-8 tab-text">
+                                        <h3>Baggage</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.<br /> Ut enim ad minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div><!-- end columns -->
+                                </div><!-- end row -->
+                            </div><!-- end baggage -->
+
+                        </div><!-- end tab-content -->
+                    </div><!-- end detail-tabs -->
+
+
+                </div><!-- end columns -->
+
+                <div class="col-12 col-md-12 col-lg-3 side-bar right-side-bar">
+
+                    <div class="side-bar-block booking-form-block">
+                        <h2 class="selected-price">$ {{flight?.price}}</h2>
+
+                        <div class="booking-form">
+                            <h3>Book Flight</h3>
+                            <p>Find your dream flight today</p>
+
+                            <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Phone"
+                                        formControlName="phone" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Check-in Date"
+                                        formControlName="checkInDate" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Description"  formControlName="description"/>
+                                </div>
+
+                                <div class="form-group right-icon">
+                                    <select class="form-control" formControlName="numberOfPassagers">
+                                        <option selected value="">Passengers Number</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <div class="form-group right-icon">
+                                    <select class="form-control" formControlName="paymentMethod">
+                                        <option selected value="">Payment Method</option>
+                                        <option value="Credit Card">Credit Card</option>
+                                        <option value="Paypal">Paypal</option>
+                                    </select>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+
+                                <div class="checkbox custom-check">
+                                    <input type="checkbox" id="check01" name="checkbox" />
+                                    <label for="check01"><span><i class="fa fa-check"></i></span>By continuing, you are
+                                        agree to the <a href="#">Terms & Conditions.</a></label>
+                                </div>
+                                <div class="col-md-12 text-center" id="result_msg"></div>
+                                <button class="btn btn-block btn-orange" type="submit" id="submit" name="submit">Confirm
+                                    Booking</button>
+                            </form>
+
+                        </div><!-- end booking-form -->
+                    </div><!-- end side-bar-block -->
+
+                    <div class="row">
+
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <div class="side-bar-block support-block">
+                                <h3>Need Help</h3>
+                                <p>Lorem ipsum dolor sit amet, ad duo fugit aeque fabulas, in lucilius prodesset pri.
+                                    Veniam delectus ei vis. Est atqui timeam mnesarchum.</p>
+                                <div class="support-contact">
+                                    <span><i class="fa fa-phone"></i></span>
+                                    <p>+1 123 1234567</p>
+                                </div><!-- end support-contact -->
+                            </div><!-- end side-bar-block -->
+                        </div><!-- end columns -->
+
+                    </div><!-- end row -->
+                </div><!-- end columns -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end flight-detail -->
+</section><!-- end innerpage-wrapper -->

@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-xl sticky-top navbar-custom main-navbar p-1" id="mynavbar-1">
+    <div class="container">
+
+        <a href="#" class="navbar-brand py-1 m-0"><span><i class="fa fa-plane"></i>STAR</span>TRAVELS</a>
+        <div class="header-search d-xl-none my-auto ml-auto py-1">
+            <a href="#" class="search-button" onclick="openSearch()"><span><i class="fa fa-search"></i></span></a>
+        </div>
+        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            id="sidebarCollapse">
+            <i class="fa fa-navicon py-1"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNavbar1">
+            <ul class="navbar-nav ml-auto" *ngIf="!auth.currentUser">
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/home" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/login" class="nav-link">
+                        Login
+                    </a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/signup" class="nav-link">
+                        Register
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto" *ngIf="auth.currentUser">
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/home" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <!-- <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/profile" class="nav-link">
+                        Profile
+                    </a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-toggle="dropdown">Profile<span><i
+                                class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="/myaccount">My Account</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);" (click)="logout()">logout </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- end navbar collapse -->
+    </div><!-- End container -->
+</nav>
